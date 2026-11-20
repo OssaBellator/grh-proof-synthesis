@@ -14,7 +14,7 @@
         "https://alpo.ge/remark.pdf"
       ],
       "proof_obligation": "Identify the exact final Lean theorem and check that it is equivalent to standard Dirichlet GRH.",
-      "verification_note": "Announcement identified; independent semantic audit has not been performed by this project.",
+      "verification_note": "Author note p. 1 inspected; claim remains unverified and exact Lean theorem is unknown.",
       "as_of": "2026-11-21"
     },
     {
@@ -27,7 +27,7 @@
         "https://alpo.ge/remark.pdf"
       ],
       "proof_obligation": "Acquire and hash the exact archive, pin its toolchain, reproduce the build, audit axioms, and compare the terminal theorem to Dirichlet GRH.",
-      "verification_note": "No build or axiom audit has been run in this repository.",
+      "verification_note": "Note p. 1 footnote links fourteen parts; archive not downloaded or built.",
       "as_of": "2026-11-21"
     },
     {
@@ -40,7 +40,7 @@
         "https://alpo.ge/remark.pdf"
       ],
       "proof_obligation": "Locate a precise lift iteration lemma; verify the claimed length, normalizations, errors, and noncircular transition to arithmetic estimates.",
-      "verification_note": "The technique is a research lead, not a validated reusable theorem.",
+      "verification_note": "Alpöge note p. 4 timeline items 8–10 describe iterated lifts; no quantified lemma checked.",
       "as_of": "2026-11-21"
     },
     {
@@ -53,7 +53,7 @@
         "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/"
       ],
       "proof_obligation": "Establish exact scope and version of the manuscript's main theorem and identify its complete proof dependency chain.",
-      "verification_note": "Announcement is not an independent mathematical verification.",
+      "verification_note": "Announcement and manuscript introductory material inspected; this does not verify the proposed proof.",
       "as_of": "2026-11-21"
     },
     {
@@ -66,7 +66,7 @@
         "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf"
       ],
       "proof_obligation": "Check definitions, operator domains, completeness/basis claims, convergence, trace interchange, and the derivation of the zero-location conclusion.",
-      "verification_note": "Initial thematic classification only; detailed line-by-line audit pending.",
+      "verification_note": "Manuscript sections and pp. 519–522 inspected; theorem 13.3.1.2 has a missing statement and an unresolved reference. Full proof audit pending.",
       "as_of": "2026-11-21"
     },
     {
@@ -80,7 +80,33 @@
         "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf"
       ],
       "proof_obligation": "Precisely define the common distribution and spaces, state the map between them, prove boundedness/uniformity, and search for counterexamples.",
-      "verification_note": "New project hypothesis. No bridging result has been proved.",
+      "verification_note": "Unproved project hypothesis. Masullo's test-function restriction φ(C_F¹)=0 excludes nonzero Weil-style autocorrelations; a straightforward positivity bridge is unavailable.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "M-003",
+      "track": "masullo",
+      "statement": "The manuscript's Chapter 13 currently lacks the written statement of Theorem 13.3.1.2 and contains an unresolved theorem reference and instructions to state and prove the main theorems.",
+      "status": "source_inspected",
+      "kind": "obstruction",
+      "source_urls": [
+        "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf"
+      ],
+      "proof_obligation": "Locate a revised complete terminal theorem, then check its statement and dependencies before treating it as a GRH proof.",
+      "verification_note": "Directly inspected physical PDF p. 522; this is a gap in the written presentation, not a proof of mathematical falsehood.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "M-004",
+      "track": "masullo",
+      "statement": "The proposed trace formula is stated for test functions vanishing on C_F¹; the author says this excludes nonzero Weil-positivity autocorrelation test functions.",
+      "status": "source_inspected",
+      "kind": "obstruction",
+      "source_urls": [
+        "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf"
+      ],
+      "proof_obligation": "Formalize the precise test-function compatibility question; justify any alternative positivity or bridge identity without assuming GRH.",
+      "verification_note": "Inspected manuscript §1.7.2 and Theorem 12.5.1.1 (physical pp. 35–36 and 519). Source statement verified; no general GRH consequence proved.",
       "as_of": "2026-11-21"
     }
   ]

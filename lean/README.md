@@ -1,12 +1,33 @@
 # Lean formalization area
 
-There is **no claimed GRH proof in this repository**.
+**No proof of RH or GRH is asserted in this directory.**
 
-A future Lean subproject must:
-1. Pin the Lean toolchain and Mathlib revision.
-2. Declare the *precise* theorem to prove and link to its standard analytic definition.
-3. Audit imports, axioms, holes, custom kernel behavior and external automation.
-4. Check a small lemma end-to-end before importing any enormous proof archive.
-5. Provide a clean-rebuild script and explain the difference between kernel acceptance and semantic review.
+The installed Minimal MCP **Lean 4 Verifier** was checked with Lean **4.35.0** (commit `eb6cafb7290e8bd5f2937522d8d804f58f02bafc`).
 
-Do not add placeholder `by sorry` theorems to a file presented as verified.
+## Current toy checks
+
+[**ToyLemma.lean**](ToyLemma.lean) has two elementary, deliberately limited results:
+
+1. Additivity of a diagonal sum with two pairs of natural numbers, a basic finite-trace sanity check.
+2. The two-element *nonnegative* autocorrelation obstruction: if a·a+b·b=0 for natural numbers, then a=b=0.
+
+The second toy is motivated by Masullo's test-function restriction φ(C_F¹)=0 and the fact that an autocorrelation at the identity is a squared L² norm. It **does not** formalize a complex convolution algebra, Haar measure, arbitrary L² functions, Masullo's topology, or a GRH implication.
+
+The following commands **were run and passed** on 21 November 2026:
+
+```powershell
+$env:ELAN_TOOLCHAIN = 'leanprover/lean4:v4.35.0'
+lean lean/ToyLemma.lean
+```
+
+The Minimal MCP provider capability `lean.file.check` was also run on `lean/ToyLemma.lean` and exited 0 without diagnostics. The environment variable is process-local. A project-pinned toolchain is still a future task.
+
+## Requirements before any serious formalization
+
+1. Pin the Lean toolchain and, if introduced, the Mathlib commit.
+2. State the exact proposed theorem, including quantifiers, normalizations, and zero conventions.
+3. Audit imports, axioms, admissions, custom trusted code and external automation.
+4. Select a **source-specific** lemma, not merely an elementary syntactic demo.
+5. Publish clean build instructions and a separate mathematical semantics audit.
+
+Never use `sorry` or `admit` in a file labeled as formally verified.

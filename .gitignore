@@ -16,3 +16,6 @@ lake-packages/
 .minimal-mcp/
 .agents/
 .research-selftest/
+
+# Downloaded primary sources are retained locally, never committed.
+.source-tmp/

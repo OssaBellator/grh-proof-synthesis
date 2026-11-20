@@ -15,6 +15,11 @@ Can independently verified pieces of these arguments be reduced to a small numbe
 
 We prioritize **reconstructing both arguments independently before combining them**. A superficially plausible hybrid is not a substitute for a sound theorem.
 
+
+## First evidence-backed pass (21 November 2026)
+
+The [task report](docs/codex-task-01-result.md) documents Codex CLI's source-inspection run and tests. Its [Alpöge dependency map](docs/dependency-map-alpoge.md) is a *narrative audit map*, not an extracted Lean proof graph. The [Masullo dependency map](docs/dependency-map-masullo.md) records the trace-formula prerequisites and a visible gap in the manuscript's written terminal theorem on p. 522. The [first-lemma triage](docs/first-lemma-triage.md) prioritizes the incompatibility between Masullo's restricted test functions and autocorrelation positivity. A tiny [Lean toy check](lean/ToyLemma.lean) passed, but no part of RH or GRH was proved.
+
 ## First milestones
 
 - **M0 — Source control:** identify originals, versions, licenses, formal theorem statements, build environments, and dependencies; preserve links and hashes.

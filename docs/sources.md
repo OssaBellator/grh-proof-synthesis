@@ -27,3 +27,14 @@ For each upstream release, record in a future `sources.lock.json`:
 - A successful Lean build alone can establish only that a precise term typechecks under that kernel and its accepted axioms/imports.
 - For handwritten proofs, distinguish a strategy outline from a fully quantified proof.
 - Point to source locations rather than paraphrasing a conjectured step as a fact.
+
+## Primary PDF checksums (20 November 2026 UTC retrieval)
+
+The checksums below were independently recomputed in the local Code workspace on 21 November 2026. The PDFs themselves are in ignored local storage and are not committed to GitHub.
+
+| Artifact | Size | Pages | SHA-256 |
+| --- | ---: | ---: | --- |
+| Alpöge note | 245,114 bytes | 4 | `3fc97784b71ddd44ff8aa0a177e99622a1c61b13cfa843a0989ee4a7a0cfeb8d` |
+| Masullo draft | 6,756,996 bytes | 940 | `e039d3f6cf0a4b14f03c7edb85097752dd65c0a2fe543c76fe992be234f97bf5` |
+
+See [machine-readable source lock](../data/sources.lock.json). This verifies downloaded artifact identity **only**, not mathematical correctness.

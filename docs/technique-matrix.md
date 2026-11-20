@@ -1,26 +1,35 @@
-# Technique matrix — working hypotheses, not proved bridges
+# Technique matrix — candidate research interfaces, not proved bridges
 
-| Theme | Alpöge–Claude proposal | Masullo proposal | Concrete comparison task |
+| Theme | Alpöge–Claude proposal | Masullo proposal | Exact comparison task |
 | --- | --- | --- | --- |
-| Key analytic object | Automorphic/arithmetic sums and lifts | Function spaces and trace operators | Identify precisely whether both encode the *same* explicit-formula distribution |
-| Localization | Arithmetic amplification / multiplicity analogue | Spectral/tracial localization | Find a shared finite toy model; compare limits |
-| Source of cancellation | Claimed iteration and estimates | Claimed cancellation among orbital terms | Extract inequalities with named norms and constants |
-| Positivity | Positivity appears in the announced mathematical chronology | Spectral constraints / trace structure | Test an exact Weil-form identity, **without assuming** it |
-| Main proof risk | Formal semantic mismatch, dependency footprint, ineffective constants | Operator domains, trace interchange, incomplete deduction | Audit the narrowest bottleneck first |
+| Arithmetic/spectral object | Automorphic lifts, periods and prime sums in the author's timeline | Test functions on idele classes, nuclear operators, trace formulas, and Hecke L-function zeros | Establish whether both constructions give distributions with the **same** normalization |
+| Localization | Multiplicity analogue from theta-lift iteration, with suggested chain length √X | Hardy–Sobolev topology and zero sums restricted to spectral strips | Identify the parameter range and error estimates; avoid conflating the two mechanisms |
+| Cancellation | Claimed arithmetic divisibility, averaging, and determinants | Claimed orbital decomposition and trace localization | Derive exact inequalities with domains, norms, and **uniform constants** |
+| Positivity | A positivity/determinant argument is mentioned in the source timeline | Masullo explicitly says **Weil positivity is not used** and restricts φ(C_F¹)=0 | The autocorrelation obstruction must be addressed before hypothesizing a positive trace identity |
+| Terminal verification | Exact Lean declaration and axiom graph not yet inspected | Written terminal chapter has an incomplete theorem statement | Require complete final theorem statement and independent semantic/proof audit |
 
-## Hypothesis H-1 (not a theorem)
+## Hypothesis H-1 (speculative only)
 
-There may be an intermediate trace/distribution identity where an automorphic construction and a function-space localization yield compatible bounds. To investigate:
+One might hope for an intermediate arithmetic distribution or trace identity to connect the two programs. **No such interface is yet constructed.**
 
-1. State a specific prime-power explicit-formula distribution `D_χ(f)`.
-2. Write the **actual** source lemmas in their native assumptions and conventions.
-3. Find embeddings/intertwiners that relate their test-function classes.
-4. Check boundedness, domains, and uniformity under localization.
-5. Attempt a simple finite-dimensional or finite-field model.
-6. Look for a counterexample **before** claiming positivity.
+Minimum tasks:
 
-Absent a proved interface, this is only a conjectural program.
+1. State and normalize the exact Dirichlet/Hecke L-function target and its explicit-formula distribution D_χ(f).
+2. Extract source lemmas, with all quantifiers, from the actual Lean archive and the precise Masullo theorems.
+3. Identify the test-function spaces, domains, and parameter dependencies of each proposed result.
+4. Explicitly address Masullo's restriction φ(C_F¹)=0 and its incompatibility with nonzero Weil-autocorrelation tests.
+5. Prove an intermediary bounded map or equality **without** GRH-equivalent assumptions or unjustified limit exchanges.
+6. Test it in a finite model and search for counterexamples before claiming any GRH implication.
+
+## Important source-inspected observations (21 November 2026)
+
+- **Alpöge**, [author note](https://alpo.ge/remark.pdf), p. 3 footnote and pp. 3–4: his chronology is an explicitly provisional, compressed narrative. It cannot substitute for a Lean declaration graph.
+- **Masullo**, [manuscript](https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf), §1.7.2, around pp. 35–36: the test-function restriction excludes nonzero positivity autocorrelations in that setting.
+- **Masullo**, §12.5, p. 519: the trace calculation specifies **a=1/2** and calls this choice necessary, whereas the introductory zero-location strategy discusses variable localization. Their relationship must be checked before extrapolation.
+- **Masullo**, Chapter 13, p. 522: the putative terminal zero-location theorem still includes an absent statement, unresolved theorem reference, and instructions to finish proof text. This proves the **written presentation here is incomplete**, not that its underlying mathematical ideas are refuted.
+
+See the [Masullo dependency map](dependency-map-masullo.md), [Alpöge dependency map](dependency-map-alpoge.md), and [lemma triage](first-lemma-triage.md).
 
 ## Simplification metric
 
-Prefer the reduction that removes assumptions, source dependencies, or analytical limits while preserving the theorem. Track: number of external lemmas, nontrivial estimates, constants with unproved uniformity, and unresolved limit exchanges. Do not use these numbers as evidence of truth.
+Prefer a reduction that removes hypotheses, dependencies, or analytical limits **while retaining a complete proof**. Record external lemmas, nontrivial estimates, constants lacking uniformity proofs, and unresolved exchanges of limits. A shorter explanation is not, by itself, mathematical verification.

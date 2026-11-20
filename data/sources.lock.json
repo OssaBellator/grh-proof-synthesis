@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-20",
+  "method": "Windows Get-FileHash SHA256 (independently rerun after Codex retrieval); PDFs not committed",
+  "artifacts": [
+    {
+      "id": "A-NOTE",
+      "url": "https://alpo.ge/remark.pdf",
+      "bytes": 245114,
+      "sha256": "3fc97784b71ddd44ff8aa0a177e99622a1c61b13cfa843a0989ee4a7a0cfeb8d",
+      "pdf_pages": 4,
+      "audit_status": "source-inspected; no formal archive audit"
+    },
+    {
+      "id": "M-PDF",
+      "url": "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf",
+      "bytes": 6756996,
+      "sha256": "e039d3f6cf0a4b14f03c7edb85097752dd65c0a2fe543c76fe992be234f97bf5",
+      "pdf_pages": 940,
+      "audit_status": "selected pages source-inspected; not full mathematical proof audit"
+    }
+  ]
+}
