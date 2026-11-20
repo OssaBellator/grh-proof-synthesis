@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "project": "grh-proof-synthesis",
+  "last_updated": "2026-11-21",
+  "scope": "Dirichlet GRH; no claimed proof",
+  "claims": [
+    {
+      "id": "A-001",
+      "track": "alpoge",
+      "statement": "Levent Alpöge announced a purported RH proof and an extension to Dirichlet GRH, developed with Claude.",
+      "status": "announced",
+      "kind": "announcement",
+      "source_urls": [
+        "https://alpo.ge/remark.pdf"
+      ],
+      "proof_obligation": "Identify the exact final Lean theorem and check that it is equivalent to standard Dirichlet GRH.",
+      "verification_note": "Announcement identified; independent semantic audit has not been performed by this project.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "A-002",
+      "track": "alpoge",
+      "statement": "The original note links a formalization purported to encode the asserted result in Lean.",
+      "status": "announced",
+      "kind": "formal_artifact_claim",
+      "source_urls": [
+        "https://alpo.ge/remark.pdf"
+      ],
+      "proof_obligation": "Acquire and hash the exact archive, pin its toolchain, reproduce the build, audit axioms, and compare the terminal theorem to Dirichlet GRH.",
+      "verification_note": "No build or axiom audit has been run in this repository.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "A-003",
+      "track": "alpoge",
+      "statement": "Iterated theta lifts appear in the author's announced development narrative as a proposed arithmetic mechanism.",
+      "status": "announced",
+      "kind": "proposed_method",
+      "source_urls": [
+        "https://alpo.ge/remark.pdf"
+      ],
+      "proof_obligation": "Locate a precise lift iteration lemma; verify the claimed length, normalizations, errors, and noncircular transition to arithmetic estimates.",
+      "verification_note": "The technique is a research lead, not a validated reusable theorem.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "M-001",
+      "track": "masullo",
+      "statement": "Ravi Vakil publicly announced Alessandro Masullo's proposed proof of GRH and linked a manuscript.",
+      "status": "announced",
+      "kind": "announcement",
+      "source_urls": [
+        "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/"
+      ],
+      "proof_obligation": "Establish exact scope and version of the manuscript's main theorem and identify its complete proof dependency chain.",
+      "verification_note": "Announcement is not an independent mathematical verification.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "M-002",
+      "track": "masullo",
+      "statement": "Masullo's manuscript proposes using modified function spaces, orbital decompositions, and trace methods to constrain zeros.",
+      "status": "under_review",
+      "kind": "proposed_method",
+      "source_urls": [
+        "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf"
+      ],
+      "proof_obligation": "Check definitions, operator domains, completeness/basis claims, convergence, trace interchange, and the derivation of the zero-location conclusion.",
+      "verification_note": "Initial thematic classification only; detailed line-by-line audit pending.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "H-001",
+      "track": "synthesis",
+      "statement": "An exact intermediate trace or Weil-form identity might connect an automorphic arithmetic bound to a localized spectral representation.",
+      "status": "hypothesis",
+      "kind": "research_hypothesis",
+      "source_urls": [
+        "https://alpo.ge/remark.pdf",
+        "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf"
+      ],
+      "proof_obligation": "Precisely define the common distribution and spaces, state the map between them, prove boundedness/uniformity, and search for counterexamples.",
+      "verification_note": "New project hypothesis. No bridging result has been proved.",
+      "as_of": "2026-11-21"
+    }
+  ]
+}
