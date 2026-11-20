@@ -1,0 +1,31 @@
+name: Lean extraction verification
+
+on:
+  push:
+    paths:
+      - 'lean/extraction/**'
+      - '.github/workflows/lean-extraction.yml'
+  pull_request:
+    paths:
+      - 'lean/extraction/**'
+      - '.github/workflows/lean-extraction.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lean-extraction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build pinned Mathlib extraction
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean/extraction
+          use-mathlib-cache: true
+          use-github-cache: false
+          build: true
+          test: false
+          lint: false

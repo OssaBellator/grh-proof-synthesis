@@ -13,6 +13,7 @@ downloads/
 artifacts/
 lake-packages/
 .lean/
+.lake/
 .minimal-mcp/
 .agents/
 .research-selftest/

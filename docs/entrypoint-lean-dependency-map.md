@@ -29,7 +29,7 @@ The module import path is `Main → Supplements.Kernels.MainTheoremsAll → Supp
 
 ## Artifact identity and external checks
 
-To repeat the two-file check, run `python tools/check_entrypoint_sources.py` from the repository. It fetches the pinned Main and Statements into memory, verifies lengths and hashes, and prints the five declaration lines from Main. The offline tests do not need network access.
+To repeat the Main and Statements checks, run `python tools/check_entrypoint_sources.py` from the repository. The checker now also verifies ClaimStrip and three official Mathlib files and compares the extraction's declaration text. It reads pinned files into memory and prints the five declaration lines from Main. The offline tests do not need network access.
 
 The pinned mirror source is CocoSgt’s import commit `0fb9869c6e6d7b54b67de803af0e0be29d37fc22` (20 Nov 14:59 UTC). Its README attribution was added later. The manifest names Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`, and the toolchain file selects Lean v4.33.1. We independently compared the bytes of **Main and Statements only** with Deicyde’s pinned copies. Both hashes matched. Deicyde CI compared its own source tree with the joined archive. Our direct source access was to mirrors and official Mathlib. [Mirror history](https://github.com/CocoSgt/riemann-hypothesis-lean/commit/0fb9869c6e6d7b54b67de803af0e0be29d37fc22) · [Deicyde Main](https://raw.githubusercontent.com/Deicyde/riemann-hypothesis/e50d09817ad81469f737e8f637561e6ccf86c670/src/Main.lean) · [Deicyde Statements](https://raw.githubusercontent.com/Deicyde/riemann-hypothesis/e50d09817ad81469f737e8f637561e6ccf86c670/src/Statements.lean) · [CI run](https://github.com/Deicyde/riemann-hypothesis/actions/runs/44813916558)
 

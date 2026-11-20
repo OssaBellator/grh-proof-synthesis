@@ -20,7 +20,11 @@ $env:ELAN_TOOLCHAIN = 'leanprover/lean4:v4.35.0'
 lean lean/ToyLemma.lean
 ```
 
-The Minimal MCP provider capability `lean.file.check` was also run on `lean/ToyLemma.lean` and exited 0 without diagnostics. The environment variable is process-local. A project-pinned toolchain is still a future task.
+The Minimal MCP provider capability `lean.file.check` was also run on `lean/ToyLemma.lean` and exited 0 without diagnostics. The environment variable is process-local.
+
+## Pinned Mathlib extraction
+
+[`extraction/`](extraction/) pins Lean 4.33.1 and Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`. It contains the independent Euler-factor proof, three controls and conditional implications among the headline predicates. See the [Task 03 run report](../docs/codex-task-03-result.md) for commands and receipts.
 
 ## Requirements before any serious formalization
 

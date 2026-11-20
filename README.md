@@ -24,7 +24,11 @@ The [task report](docs/codex-task-01-result.md) documents Codex CLI's source-ins
 
 Andrew Sutherland reports a successful build and Lean kernel replay of all 175,187 submitted modules, the three standard axioms for each headline theorem, and nanoda acceptance of the full export. At his 19:45 UTC update on 20 November, end-to-end Comparator was still running. Deicyde’s passing CI checked archive identity and a Mathlib-only challenge export. Masullo’s posted draft still lacks the statement of Theorem 13.3.1.2 on p. 522. [MIT report and logs](https://math.mit.edu/~drew/grh/) · [Deicyde CI](https://github.com/Deicyde/riemann-hypothesis/actions/runs/44813916558) · [Masullo, p. 522](https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf#page=522)
 
-The [verification landscape](docs/verification-landscape-2026-11-21.md) and [evidence registry](data/reproductions.json) identify each investigator’s target and result. The [Lean entry-point map](docs/entrypoint-lean-dependency-map.md) follows the five declarations to a shared nonvanishing assertion. The [ranked experiments](docs/next-research-experiments.md) start with the Dirichlet pole convention and a small Euler-factor lemma.
+The [verification landscape](docs/verification-landscape-2026-11-21.md) and [evidence registry](data/reproductions.json) identify each investigator’s target and result. The [Lean entry-point map](docs/entrypoint-lean-dependency-map.md) follows the five declarations to a shared nonvanishing assertion.
+
+## Task 03 extraction and statement audit
+
+The independent Mathlib proof of the Euler-factor lemma used in `Claim.prim_zero` passed the Lean 4.33.1 build and local kernel replay. The three Dirichlet formulations are equivalent and imply the two zeta formulations, as checked in the same project. The audit also gives an explicit imaginary-axis zero for an imprimitive character. The next source audit will trace the theorem that turns theta-integral comparison and local matching into the shared nonvanishing assertion. [Euler-factor proof](docs/claim-factor-extraction.md) · [Semantic audit](docs/semantic-audit-dirichlet.md) · [Run report](docs/codex-task-03-result.md) · [Ranked experiments](docs/next-research-experiments.md)
 
 ## First milestones
 
@@ -58,7 +62,7 @@ python tools/validate_claims.py
 python -m unittest discover -s tests -v
 ```
 
-These checks validate the **research metadata**, not any GRH proof.
+The Python tests validate research metadata. Use `python tools/check_entrypoint_sources.py` with network access to compare six small pinned sources and the extraction's declarations. The [Task 03 run report](docs/codex-task-03-result.md) gives the pinned Lean build commands.
 
 ## Layout
 
@@ -70,6 +74,7 @@ docs/research-plan.md        phased plan and stop conditions
 docs/technique-matrix.md     candidate connections; no assumed bridge
 docs/alternatives-backlog.md deferred research ideas
 lean/README.md               safe formalization policy
+lean/extraction/             pinned Mathlib extraction and conditional semantic checks
 tools/validate_claims.py     metadata validator
 tests/                       regression tests for metadata
 ```
