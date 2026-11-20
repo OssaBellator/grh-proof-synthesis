@@ -1,0 +1,3413 @@
+{
+  "schema_version": 1,
+  "revision": "0fb9869c6e6d7b54b67de803af0e0be29d37fc22",
+  "scope": "curated source text; no elaboration",
+  "sources": [
+    {
+      "id": "main",
+      "path": "src/Main.lean",
+      "bytes": 433,
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Main.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Main.lean"
+    },
+    {
+      "id": "statements",
+      "path": "src/Statements.lean",
+      "bytes": 783,
+      "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Statements.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Statements.lean"
+    },
+    {
+      "id": "wrappers",
+      "path": "src/Supplements/Kernels/MainTheorems.lean",
+      "bytes": 740,
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Supplements/Kernels/MainTheorems.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Supplements/Kernels/MainTheorems.lean"
+    },
+    {
+      "id": "conclusion",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "bytes": 1213,
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean"
+    },
+    {
+      "id": "every",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+      "bytes": 1215,
+      "sha256": "31f6e49936226cfc3d71b15685347bd2874db0aef384e5cf4fea7d09ba68dc71",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean"
+    },
+    {
+      "id": "literature",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "bytes": 97393,
+      "sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean"
+    },
+    {
+      "id": "handoff",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "bytes": 8752,
+      "sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean"
+    },
+    {
+      "id": "theta-types",
+      "path": "src/Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+      "bytes": 28971,
+      "sha256": "62209e957e734a32e4a85feb546cb2e8e7e087475d54fe5575b8fa7b4bd80197",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean"
+    },
+    {
+      "id": "theta-head",
+      "path": "src/Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+      "bytes": 2146,
+      "sha256": "9db3d1af3aac449a4142cbd146a4bcb7b12fbb1fe3b1c73115a4fa274a87b6bf",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean"
+    },
+    {
+      "id": "theta-assembly",
+      "path": "src/Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+      "bytes": 27212,
+      "sha256": "388ed49b7854787ba11153c6fbdf7094da29e3f940fa9c61773342cb72707d1e",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean"
+    },
+    {
+      "id": "theta-leaves",
+      "path": "src/Development/WeilBound/ThetaLifts/AgreeOfLeaves.lean",
+      "bytes": 405,
+      "sha256": "d744817cdee7b91992ea1185f8147cb144fe8edff6275756e32901b22f2b47f0",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/ThetaLifts/AgreeOfLeaves.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/ThetaLifts/AgreeOfLeaves.lean"
+    },
+    {
+      "id": "eisenstein",
+      "path": "src/Development/WeilBound/RepresentationTheoryGL/EisensteinSeries/SiegelEisensteinHalfPlane/SchwartzBruhatMajorants/SiegelMultOf.lean",
+      "bytes": 8967,
+      "sha256": "d73a7120fc8aa16f6a4f9f0d9f986455044454b274c9a391844811e145aea188",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/RepresentationTheoryGL/EisensteinSeries/SiegelEisensteinHalfPlane/SchwartzBruhatMajorants/SiegelMultOf.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/RepresentationTheoryGL/EisensteinSeries/SiegelEisensteinHalfPlane/SchwartzBruhatMajorants/SiegelMultOf.lean"
+    },
+    {
+      "id": "siegel-weil",
+      "path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean",
+      "bytes": 452,
+      "sha256": "fcfc50f0151ae18442a877ab9193933f99b922a5d812aa7569ccc4665156f1dd",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean"
+    },
+    {
+      "id": "hecke-one-type",
+      "path": "src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/HeckeLEntireAndNonzeroAtOne.lean",
+      "bytes": 7458,
+      "sha256": "3d2dbc2ba4ab93fd773d3aac39bdf805628276e7fad7d39c90d9c0b62d4d27af",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/HeckeLEntireAndNonzeroAtOne.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/HeckeLEntireAndNonzeroAtOne.lean"
+    },
+    {
+      "id": "hecke-one-proof",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HeckeLEntireAndNonzeroAtOneHolds.lean",
+      "bytes": 8311,
+      "sha256": "420dde5e03665d42fe60d154687af958ed02edbf7b3db5ab40389646585ce582",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HeckeLEntireAndNonzeroAtOneHolds.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HeckeLEntireAndNonzeroAtOneHolds.lean"
+    },
+    {
+      "id": "hecke-one-wrapper",
+      "path": "src/Development/WeilBound/CoreStatements/StandardPublishedResults/StandardTheoremStatements/HeckeLEntireAndNonzeroAtOne.lean",
+      "bytes": 1157,
+      "sha256": "9e1fb005b142b4c7e2cb97fee064356baf36bf99591ecd1bf2eaab57683e3bae",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/CoreStatements/StandardPublishedResults/StandardTheoremStatements/HeckeLEntireAndNonzeroAtOne.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/WeilBound/CoreStatements/StandardPublishedResults/StandardTheoremStatements/HeckeLEntireAndNonzeroAtOne.lean"
+    },
+    {
+      "id": "covol-top",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+      "bytes": 2836,
+      "sha256": "545f4dbcc8b67e0d001951fcad7abaa8250d335a64a6950adf5ce69fee5f30a0",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean"
+    },
+    {
+      "id": "covol-g",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+      "bytes": 6400,
+      "sha256": "f29362501bf62b9b6a7eb933aa0bdf9065414ecca014cf4a9da2970d791b4928",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean"
+    },
+    {
+      "id": "covol-type",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+      "bytes": 6297,
+      "sha256": "a73cbdc50b441874d719358771398f999f21e720ef899a99b66c09b9bf72272b",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean"
+    },
+    {
+      "id": "covol-lambda",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoveringLambdaInvariantBound.lean",
+      "bytes": 3664,
+      "sha256": "a41e2f736d27da7fde44ef3bdb850a88217720acded5d5d910b7ac7a8a25039a",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoveringLambdaInvariantBound.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoveringLambdaInvariantBound.lean"
+    },
+    {
+      "id": "covol-steps-wrapper",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfStepsStatement.lean",
+      "bytes": 1318,
+      "sha256": "b44910310a652e4b6edc43be701af3e695b2f65f146b5096f05710bb82ea6d3a",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfStepsStatement.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfStepsStatement.lean"
+    },
+    {
+      "id": "covol-steps",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean",
+      "bytes": 2912,
+      "sha256": "91523ca83062a562c25a77e794e99d2028103fce290ca0749392aed99ea38c75",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean"
+    },
+    {
+      "id": "covol-estimate",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumeFromGramAndBounds.lean",
+      "bytes": 5827,
+      "sha256": "840e9bdd6a0114433a9a8a7b42c52cc6f69cd5ab6604b3fa95750e3c580e90a7",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumeFromGramAndBounds.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumeFromGramAndBounds.lean"
+    },
+    {
+      "id": "lambda-type",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/Divisors/CovolXOfCovol.lean",
+      "bytes": 15459,
+      "sha256": "f40c762ed8c2b18311d604540c15613e4a5969b1395dcab59b2854584fb6d3ae",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/Definitions/Divisors/CovolXOfCovol.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AbelianVarietyTheory/Definitions/Divisors/CovolXOfCovol.lean"
+    },
+    {
+      "id": "parameters",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean",
+      "bytes": 1674,
+      "sha256": "c1d3ba89b86a5e8e29274a27baaa7766ad50e103e462d72b835d3c6615d6259e",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Prm1.lean"
+    },
+    {
+      "id": "local-two-three",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/At23OfAll.lean",
+      "bytes": 2978,
+      "sha256": "dd8358fe7eae54e8029e7f0a990c3b8b3ad91c6fd31684581dbba64984770244",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/At23OfAll.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/At23OfAll.lean"
+    },
+    {
+      "id": "local-two-three-type",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BoundAtTwoThreeFamilyFon.lean",
+      "bytes": 2482,
+      "sha256": "d7727aefd6cd01b68813e86b763e7393ae4712c97bb99df132264602e46f6fe5",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BoundAtTwoThreeFamilyFon.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BoundAtTwoThreeFamilyFon.lean"
+    },
+    {
+      "id": "grid",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/EvaluationGridOfJoin.lean",
+      "bytes": 5155,
+      "sha256": "19afab8464c5823c489ac05c3b31350bb9fe8421e73f75e96968647f711f4794",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/EvaluationGridOfJoin.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/EvaluationGridOfJoin.lean"
+    },
+    {
+      "id": "ll-forward",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LlOf.lean",
+      "bytes": 1455,
+      "sha256": "7e79c483b1f5c987425d180cc1502b177b5174b5dae4c4fb956ffc9e4131cec5",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LlOf.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LlOf.lean"
+    },
+    {
+      "id": "ll-type",
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+      "bytes": 6283,
+      "sha256": "4054d69535a55b8df339dee1ed766d38cb271ae87ce6033a8e0195ac577d9931",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean"
+    },
+    {
+      "id": "ll-exists",
+      "path": "src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+      "bytes": 3557,
+      "sha256": "2411dd4cb455607d3f39761258ccde5c9e945443c421e69a626e4148a79824ab",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean"
+    },
+    {
+      "id": "row",
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+      "bytes": 433,
+      "sha256": "0cfbca6cb7d1da543ee9d24c30faeeb3f68838f91c4f6c2c0e682e025c8b9a44",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean"
+    },
+    {
+      "id": "row-type",
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+      "bytes": 5507,
+      "sha256": "e3020031e884beef2eff18275019b7213a16f3c721242e9a79891b5396955719",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean"
+    },
+    {
+      "id": "row-alias",
+      "path": "src/Development/AutomorphicArithmetic/Foundations/UnitarySphericalFixing/SatakeParameters/RecT.lean",
+      "bytes": 403,
+      "sha256": "851c34b5611d4cf13499cafacfc3111ef71b1f642eb3feb00565ab40e0fd39d1",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/UnitarySphericalFixing/SatakeParameters/RecT.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/UnitarySphericalFixing/SatakeParameters/RecT.lean"
+    },
+    {
+      "id": "row-lift",
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+      "bytes": 495,
+      "sha256": "3f72f1644a6214bb5b90a5e9bac5e33b0474d52eb22f2f1841d443ed342531c2",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean"
+    },
+    {
+      "id": "vwin-row",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "bytes": 515,
+      "sha256": "d2df45a5cf337190ae6f885e8e43056ae4e804ae8da250a2ab0abd64b1ca7080",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean"
+    },
+    {
+      "id": "vwin-base-change",
+      "path": "src/Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/DefiniteNHolds.lean",
+      "bytes": 487,
+      "sha256": "a8dbda049d3f53757e79628e6d3ec1b2ff3cc239057f596d2f87ca9f9f1c3905",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/DefiniteNHolds.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/DefiniteNHolds.lean"
+    },
+    {
+      "id": "vwin-top",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "bytes": 6603,
+      "sha256": "f824d3f7873a493432bdfcbdc279fa82d70a6a9dbaac44c2a30316cada2eae3e",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean"
+    },
+    {
+      "id": "vwin-window",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean",
+      "bytes": 3721,
+      "sha256": "576e18ba083451bcffe9e94075dc8d22ccfa6995fa8d30d68ea108b1cc910cf0",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean"
+    },
+    {
+      "id": "vwin-core",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+      "bytes": 2281,
+      "sha256": "695927bf54a16053ae211e0d1f7ad26217806520d60f884459f9c0d7aac1460d",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean"
+    },
+    {
+      "id": "vwin-counts",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+      "bytes": 2436,
+      "sha256": "3c71cf0dabc617e3d1ab9fc04939c311e4242912407cdfbc71c8e0764563d558",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean"
+    },
+    {
+      "id": "vwin-joint",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "bytes": 7504,
+      "sha256": "ded642308ff9cd83eed14643f20899986c271c73f2ee900bccf6f7a32f3b350d",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean"
+    },
+    {
+      "id": "vwin-type",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "bytes": 3776,
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean"
+    },
+    {
+      "id": "top-plug",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "bytes": 1667,
+      "sha256": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean"
+    },
+    {
+      "id": "top-shape",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+      "bytes": 6555,
+      "sha256": "9647d4cbe444f79de90c7a5371801e83c58a040499bf03fd61faf37be9e6eaa3",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean"
+    },
+    {
+      "id": "top-family",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+      "bytes": 2157,
+      "sha256": "655762e90a0d7aae940774b631286a6cb942e59f68d7a3c350c05274487bf6ec",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean"
+    },
+    {
+      "id": "divisibility",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+      "bytes": 6424,
+      "sha256": "cefdce360890e26405199ef8db01d6b0c7e044c4ebebeb6bbcfd23de6148bde0",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean"
+    },
+    {
+      "id": "zero-free",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "bytes": 1791,
+      "sha256": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean"
+    },
+    {
+      "id": "zero-free-type",
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+      "bytes": 7338,
+      "sha256": "d6b12bcbdc15c1b717c33a712474f9fca18c577a65c41fff2b2937534e5447ba",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean"
+    },
+    {
+      "id": "imprimitive",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean",
+      "bytes": 1781,
+      "sha256": "8de85415d0d139f23b2b50ba56c18ab3b3e29740f41e2d86eaf99b95765f512e",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean"
+    },
+    {
+      "id": "supply-chi",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "bytes": 697,
+      "sha256": "70a11ba909e03b9153a6beacce24da22f3224b8192ec6980b7f27018961be81b",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean"
+    },
+    {
+      "id": "supply-field",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+      "bytes": 1830,
+      "sha256": "cd70757dd71088386ae322de0a4ce80adaeec30c2fcfe5f2ae03ae2b69e515b9",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean"
+    },
+    {
+      "id": "supply-proof",
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "bytes": 8159,
+      "sha256": "b70c2177d57dfcd03f82784741813b7c6e6b525c69ffec5cae5527f03013a364",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean"
+    },
+    {
+      "id": "win-pairs",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "bytes": 4570,
+      "sha256": "41c1edf737bb6e1a4791d4440488a885889209db750698359ab4d1e237dc2f6e",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean"
+    },
+    {
+      "id": "pair-types",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "bytes": 2421,
+      "sha256": "e5ddbc7f4573275caad502b8414dc3579ed904d1fa6c5f3848080bbd94fb3abb",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean"
+    },
+    {
+      "id": "pair-ex",
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean",
+      "bytes": 8552,
+      "sha256": "8af18345e99c599e185472a0221b84acf33455b19ea1d77fe5bed311236f9890",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean"
+    },
+    {
+      "id": "pair-exists",
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PairExists.lean",
+      "bytes": 2782,
+      "sha256": "e4e59ce3542cdbde727aaef132c495d1aa20d99c42dee8cf058c3f5a407a8db7",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/PairExists.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/PairExists.lean"
+    },
+    {
+      "id": "pair-share",
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PairShare.lean",
+      "bytes": 3444,
+      "sha256": "dc43506b1872e1afb8892d25feb9062264c1dd929acc51838131e559a3e0de0b",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/PairShare.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/PairShare.lean"
+    },
+    {
+      "id": "stage-one",
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/Stage1Succ.lean",
+      "bytes": 5255,
+      "sha256": "5d3d6a56d035eb031bd207d4474a768b65dadf148579df0cb4815c51a1206819",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/Stage1Succ.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/Stage1Succ.lean"
+    },
+    {
+      "id": "prime-bounds",
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PrimeSetTwoBounds.lean",
+      "bytes": 3089,
+      "sha256": "5add5a8d499ab3c7d84e64e3ea1c529d09b7ecc472a7fa82e700881196861ec2",
+      "raw_url": "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/PrimeSetTwoBounds.lean",
+      "repo_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/PrimeSetTwoBounds.lean"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "main-grh",
+      "role": "target",
+      "name": "LFunction_eq_zero_re",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "main",
+        "lines": [
+          10,
+          10
+        ],
+        "anchor": "DirichletLZerosOnLine := claimAll.2.1"
+      }
+    },
+    {
+      "id": "main-half",
+      "role": "target",
+      "name": "LFunction_ne_zero_of_half_lt_re",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "main",
+        "lines": [
+          8,
+          8
+        ],
+        "anchor": "DirichletLNonvanishingRightOfHalf := allChi"
+      }
+    },
+    {
+      "id": "main-rh",
+      "role": "target",
+      "name": "riemannHypothesis",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "main",
+        "lines": [
+          4,
+          4
+        ],
+        "anchor": "RiemannHypothesis := rhOfAll"
+      }
+    },
+    {
+      "id": "half-type",
+      "role": "proposition",
+      "name": "DirichletLNonvanishingRightOfHalf",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "statements",
+        "lines": [
+          6,
+          7
+        ],
+        "anchor": "def DirichletLNonvanishingRightOfHalf"
+      }
+    },
+    {
+      "id": "rh-wrapper",
+      "role": "forwarder",
+      "name": "rhOfAll",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "wrappers",
+        "lines": [
+          9,
+          9
+        ],
+        "anchor": "Formalism.VW.rh_of_every allChi"
+      }
+    },
+    {
+      "id": "claim-all",
+      "role": "record-constructor",
+      "name": "claimAll",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "wrappers",
+        "lines": [
+          15,
+          16
+        ],
+        "anchor": "⟨allChi, Claim.strip allChi, Claim.zeta allChi⟩"
+      }
+    },
+    {
+      "id": "all-chi",
+      "role": "forwarder",
+      "name": "allChi",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "wrappers",
+        "lines": [
+          7,
+          7
+        ],
+        "anchor": ":= UpperTheory.FinalTheorems.everyCharacter"
+      }
+    },
+    {
+      "id": "every-char",
+      "role": "forwarder",
+      "name": "UpperTheory.FinalTheorems.everyCharacter",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          10,
+          11
+        ],
+        "anchor": "everyCharacter_of_row UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+      }
+    },
+    {
+      "id": "every-type",
+      "role": "proposition",
+      "name": "UpperTheory.EveryCharacter",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "every",
+        "lines": [
+          13,
+          14
+        ],
+        "anchor": "DirichletCharacter.LFunction χ s ≠ 0"
+      }
+    },
+    {
+      "id": "row-wrapper",
+      "role": "forwarder",
+      "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          7,
+          8
+        ],
+        "anchor": "⟨h, UpperTheory.Zero.LLC.recTExists, h⟩"
+      }
+    },
+    {
+      "id": "row-proof",
+      "role": "forwarder",
+      "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "row",
+        "lines": [
+          4,
+          6
+        ],
+        "anchor": "galoisRepresentations_of_thetaLift UpperTheory.TP.K.tLiftK"
+      }
+    },
+    {
+      "id": "row-lift",
+      "role": "forwarder",
+      "name": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "row-lift",
+        "lines": [
+          4,
+          6
+        ],
+        "anchor": "galoisLocalGlobalStrong_of_geometry_lift UpperTheory.Gal.Int.Geo.geoOne_holds up"
+      }
+    },
+    {
+      "id": "row-alias",
+      "role": "proposition",
+      "name": "UpperTheory.One.M.Row",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "row-alias",
+        "lines": [
+          6,
+          6
+        ],
+        "anchor": "def UpperTheory.One.M.Row"
+      }
+    },
+    {
+      "id": "row-type",
+      "role": "proposition",
+      "name": "UpperTheory.GalStar.Row0b",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "row-type",
+        "lines": [
+          54,
+          73
+        ],
+        "anchor": "def Row0b : Prop"
+      }
+    },
+    {
+      "id": "literature-input",
+      "role": "record",
+      "name": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          215,
+          218
+        ],
+        "anchor": "structure UpperTheory.LiteratureTheorems.OpenLiteratureStatements : Prop"
+      }
+    },
+    {
+      "id": "literature-call",
+      "role": "forwarder",
+      "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          810,
+          813
+        ],
+        "anchor": "theorem UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+      }
+    },
+    {
+      "id": "handoff",
+      "role": "forwarder",
+      "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          39,
+          73
+        ],
+        "anchor": "theorem every_character_of_theta_integrals_local_matching"
+      }
+    },
+    {
+      "id": "eigen-bundle",
+      "role": "record-constructor",
+      "name": "UpperTheory.LiteratureTheorems.published_results_eigen",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          666,
+          726
+        ],
+        "anchor": "UnitaryGroupThirdPlaceHypotheses where"
+      }
+    },
+    {
+      "id": "local-bundle",
+      "role": "record-constructor",
+      "name": "UpperTheory.LiteratureTheorems.published_results_first",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          727,
+          780
+        ],
+        "anchor": "GlobalTheory.FunPr.ThetaLocalInputs where"
+      }
+    },
+    {
+      "id": "theta-first",
+      "role": "projection",
+      "name": "(theta_integrals_agree_and_local_matching_of_literature O).1",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          811,
+          811
+        ],
+        "anchor": "theta_integrals_agree_and_local_matching_of_literature O).1"
+      }
+    },
+    {
+      "id": "theta-second",
+      "role": "projection",
+      "name": "(theta_integrals_agree_and_local_matching_of_literature O).2",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          811,
+          811
+        ],
+        "anchor": "theta_integrals_agree_and_local_matching_of_literature O).2"
+      }
+    },
+    {
+      "id": "theta-pair",
+      "role": "forwarder",
+      "name": "UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          565,
+          566
+        ],
+        "anchor": "PositivityTheory.ThKR.theoremK_head2"
+      }
+    },
+    {
+      "id": "theta-agree",
+      "role": "proposition",
+      "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-types",
+        "lines": [
+          585,
+          592
+        ],
+        "anchor": "def ThetaIntegralsAgree : Prop"
+      }
+    },
+    {
+      "id": "local-match",
+      "role": "proposition",
+      "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-types",
+        "lines": [
+          581,
+          583
+        ],
+        "anchor": "def LocalMatching : Prop"
+      }
+    },
+    {
+      "id": "theta-decay",
+      "role": "estimate",
+      "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Decay",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-types",
+        "lines": [
+          498,
+          501
+        ],
+        "anchor": "def Decay : Prop"
+      }
+    },
+    {
+      "id": "theta-scalar",
+      "role": "proposition",
+      "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.OneConst",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-types",
+        "lines": [
+          491,
+          505
+        ],
+        "anchor": "def OneConst : Prop"
+      }
+    },
+    {
+      "id": "theta-steps",
+      "role": "proposition",
+      "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.StepBeta / StepAlpha",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-types",
+        "lines": [
+          552,
+          579
+        ],
+        "anchor": "def StepAlpha"
+      }
+    },
+    {
+      "id": "theta-head",
+      "role": "forwarder",
+      "name": "PositivityTheory.ThKR.theoremK_head2",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-head",
+        "lines": [
+          26,
+          27
+        ],
+        "anchor": "theoremK_head2_of_mod PositivityTheory.Sph.modSt2 h11 h12"
+      }
+    },
+    {
+      "id": "theta-mod",
+      "role": "conditional-proof",
+      "name": "PositivityTheory.ThKR.theoremK_head2_of_mod",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-head",
+        "lines": [
+          14,
+          20
+        ],
+        "anchor": "Tr.closeSph"
+      }
+    },
+    {
+      "id": "theta-assembly",
+      "role": "mathematical-proof",
+      "name": "PositivityTheory.Sph.Tr.closeSph",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-assembly",
+        "lines": [
+          28,
+          193
+        ],
+        "anchor": "theorem PositivityTheory.Sph.Tr.closeSph"
+      }
+    },
+    {
+      "id": "theta-leaves",
+      "role": "record-constructor",
+      "name": "PositivityTheory.ThKG.agree_of_leaves",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "theta-leaves",
+        "lines": [
+          7,
+          8
+        ],
+        "anchor": "⟨agree_of_parts hd L.kConst hc L.kBeta L.kAlpha, matching_of_parts L.kReal L.kFin⟩"
+      }
+    },
+    {
+      "id": "eis",
+      "role": "forwarder",
+      "name": "UpperTheory.LiteratureTheorems.eis_bl_of_literature",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          561,
+          562
+        ],
+        "anchor": "PositivityTheory.RgEis.Hd.eisBL"
+      }
+    },
+    {
+      "id": "sw",
+      "role": "forwarder",
+      "name": "UpperTheory.LiteratureTheorems.siegel_weil_std_of_literature",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          563,
+          564
+        ],
+        "anchor": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd"
+      }
+    },
+    {
+      "id": "eis-proof",
+      "role": "mathematical-proof",
+      "name": "PositivityTheory.RgEis.Hd.eisBL",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "eisenstein",
+        "lines": [
+          101,
+          113
+        ],
+        "anchor": "theorem eisBL : GlobalTheory.ThK.Dbl.EisBL"
+      }
+    },
+    {
+      "id": "sw-proof",
+      "role": "mathematical-proof",
+      "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "siegel-weil",
+        "lines": [
+          6,
+          8
+        ],
+        "anchor": "siegelWeilStd_of_ct (Act.ctSplit_of kfour.auxEx kfour.coefEx)"
+      }
+    },
+    {
+      "id": "hecke-one-wrapper",
+      "role": "forwarder",
+      "name": "PositivityTheory.Stage1.PM.heckeLEntireAndNonzeroAtOne",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "hecke-one-wrapper",
+        "lines": [
+          18,
+          19
+        ],
+        "anchor": "GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne_holds"
+      }
+    },
+    {
+      "id": "hecke-one-type",
+      "role": "proposition",
+      "name": "GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "hecke-one-type",
+        "lines": [
+          19,
+          31
+        ],
+        "anchor": "def HeckeLEntireAndNonzeroAtOne : Prop"
+      }
+    },
+    {
+      "id": "hecke-one-proof",
+      "role": "mathematical-proof",
+      "name": "GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne_holds",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "hecke-one-proof",
+        "lines": [
+          112,
+          134
+        ],
+        "anchor": "theorem _root_.GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne_holds"
+      }
+    },
+    {
+      "id": "hecke-one-literature",
+      "role": "forwarder",
+      "name": "UpperTheory.LiteratureTheorems.hecke_l_entire_and_nonzero_at_one_of_literature",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          427,
+          428
+        ],
+        "anchor": "PositivityTheory.Stage1.PM.heckeLEntireAndNonzeroAtOne"
+      }
+    },
+    {
+      "id": "nonempty",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          44,
+          68
+        ],
+        "anchor": "theorem nonempty_hyps_definite_side_of_closed_bound"
+      }
+    },
+    {
+      "id": "linked-bound",
+      "role": "conditional-proof",
+      "name": "UpperTheory.N.boundAtTwoThree_linked_of_recT",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "local-two-three",
+        "lines": [
+          19,
+          26
+        ],
+        "anchor": "theorem boundAtTwoThree_linked_of_recT"
+      }
+    },
+    {
+      "id": "linked-bound-type",
+      "role": "proposition",
+      "name": "GlobalTheory.NLink.BoundAtTwoThreeFamilyFonAlt",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "local-two-three-type",
+        "lines": [
+          25,
+          28
+        ],
+        "anchor": "def BoundAtTwoThreeFamilyFonAlt"
+      }
+    },
+    {
+      "id": "link-parameters",
+      "role": "forwarder",
+      "name": "GlobalTheory.Mem.Top.Bl.parametersOfDependence",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "parameters",
+        "lines": [
+          20,
+          21
+        ],
+        "anchor": "def parametersOfDependence"
+      }
+    },
+    {
+      "id": "eval-grid",
+      "role": "conditional-proof",
+      "name": "GlobalTheory.Mem.LiteralAutomorphy.evaluation_grid_of_join",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "grid",
+        "lines": [
+          23,
+          44
+        ],
+        "anchor": "theorem evaluation_grid_of_join"
+      }
+    },
+    {
+      "id": "covol",
+      "role": "conditional-proof",
+      "name": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "covol-top",
+        "lines": [
+          16,
+          22
+        ],
+        "anchor": "theorem topCovolSlim2_use_alt_alt"
+      }
+    },
+    {
+      "id": "covol-type",
+      "role": "proposition",
+      "name": "GlobalTheory.CovTop.CovolumeBoundOfX",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "covol-type",
+        "lines": [
+          17,
+          61
+        ],
+        "anchor": "def CovolumeBoundOfX : Prop"
+      }
+    },
+    {
+      "id": "covol-g",
+      "role": "conditional-proof",
+      "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "covol-g",
+        "lines": [
+          39,
+          58
+        ],
+        "anchor": "theorem topCovolG_alt_alt"
+      }
+    },
+    {
+      "id": "covol-pubs",
+      "role": "record-constructor",
+      "name": "UpperTheory.LiteratureTheorems.published_results_arithmetic",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          781,
+          809
+        ],
+        "anchor": "GlobalTheory.CovTop.PublishedHodgeBundleTheorems where"
+      }
+    },
+    {
+      "id": "covol-assembly-wrapper",
+      "role": "forwarder",
+      "name": "GlobalTheory.T.covolX_of_truncation_badSet_lambda_lowBound",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "covol-steps-wrapper",
+        "lines": [
+          11,
+          12
+        ],
+        "anchor": "Assembly.covolX_of_lift_bounds_and_coreLe"
+      }
+    },
+    {
+      "id": "covol-assembly",
+      "role": "conditional-proof",
+      "name": "GlobalTheory.CovTop.Assembly.covolX_of_lift_bounds_and_coreLe",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "covol-steps",
+        "lines": [
+          16,
+          40
+        ],
+        "anchor": "have main := lcv_le"
+      }
+    },
+    {
+      "id": "covol-inequality",
+      "role": "estimate",
+      "name": "GlobalTheory.CovTop.Assembly.lcv_le",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "covol-estimate",
+        "lines": [
+          39,
+          84
+        ],
+        "anchor": "theorem lcv_le"
+      }
+    },
+    {
+      "id": "covol-loss",
+      "role": "estimate",
+      "name": "GlobalTheory.CovTop.Assembly.exists_loss_le",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "covol-estimate",
+        "lines": [
+          25,
+          34
+        ],
+        "anchor": "theorem exists_loss_le"
+      }
+    },
+    {
+      "id": "lift-lambda",
+      "role": "estimate",
+      "name": "GlobalTheory.T.liftLambdaBound_of_gram_meas",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "covol-lambda",
+        "lines": [
+          21,
+          45
+        ],
+        "anchor": "integral_cusp_slope_power_bound_alt_alt"
+      }
+    },
+    {
+      "id": "lambda-type",
+      "role": "estimate",
+      "name": "GlobalTheory.CovTop.LamAt",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "lambda-type",
+        "lines": [
+          73,
+          73
+        ],
+        "anchor": "def LamAt (A : ℝ) : Prop"
+      }
+    },
+    {
+      "id": "ll-literature",
+      "role": "forwarder",
+      "name": "UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          313,
+          314
+        ],
+        "anchor": "UpperTheory.One.M.New.llOf_alt"
+      }
+    },
+    {
+      "id": "ll-adapter",
+      "role": "forwarder",
+      "name": "UpperTheory.One.M.New.llOf_alt",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "ll-forward",
+        "lines": [
+          18,
+          21
+        ],
+        "anchor": "fun h _ _ _ _ _ _ _ _ _ _ _ => h"
+      }
+    },
+    {
+      "id": "ll-projection",
+      "role": "projection",
+      "name": "UpperTheory.LiteratureTheorems.local_langlands_recT_exists_of_literature",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          283,
+          284
+        ],
+        "anchor": "O.localLanglandsExists"
+      }
+    },
+    {
+      "id": "ll-witness",
+      "role": "mathematical-proof",
+      "name": "UpperTheory.Zero.LLC.recTExists",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "ll-exists",
+        "lines": [
+          20,
+          66
+        ],
+        "anchor": "theorem UpperTheory.Zero.LLC.recTExists"
+      }
+    },
+    {
+      "id": "ll-type",
+      "role": "proposition",
+      "name": "UpperTheory.Zero.LLC.RecTExists",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "ll-type",
+        "lines": [
+          55,
+          80
+        ],
+        "anchor": "def RecTExists : Prop"
+      }
+    },
+    {
+      "id": "vwin",
+      "role": "proposition",
+      "name": "UpperTheory.Top.VWin",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-type",
+        "lines": [
+          39,
+          49
+        ],
+        "anchor": "∀ ψ : PChar, VWinAt ψ 401"
+      }
+    },
+    {
+      "id": "vwin-bound",
+      "role": "estimate",
+      "name": "UpperTheory.Top.VVle",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-type",
+        "lines": [
+          12,
+          17
+        ],
+        "anchor": "def VVle"
+      }
+    },
+    {
+      "id": "vwin-row",
+      "role": "forwarder",
+      "name": "UpperTheory.One.vwin_of_row",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-row",
+        "lines": [
+          4,
+          5
+        ],
+        "anchor": "UpperTheory.One.Join.automorphic_window_of_inputs"
+      }
+    },
+    {
+      "id": "vwin-base-change",
+      "role": "forwarder",
+      "name": "UpperTheory.BaseChangeIdentities.baseChangeN",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-base-change",
+        "lines": [
+          5,
+          6
+        ],
+        "anchor": "baseChangeN_of UpperTheory.HeckeLevelFrameExistence.candFin"
+      }
+    },
+    {
+      "id": "vwin-top",
+      "role": "forwarder",
+      "name": "UpperTheory.One.Join.automorphic_window_of_inputs",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-top",
+        "lines": [
+          71,
+          74
+        ],
+        "anchor": "theorem UpperTheory.One.Join.automorphic_window_of_inputs"
+      }
+    },
+    {
+      "id": "vwin-from-inputs",
+      "role": "record-constructor",
+      "name": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-top",
+        "lines": [
+          55,
+          58
+        ],
+        "anchor": "v_window_of_literal_automorphy_n ⟨"
+      }
+    },
+    {
+      "id": "vwin-window",
+      "role": "forwarder",
+      "name": "UpperTheory.V.v_window_of_literal_automorphy_n",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-window",
+        "lines": [
+          33,
+          34
+        ],
+        "anchor": "theorem UpperTheory.V.v_window_of_literal_automorphy_n"
+      }
+    },
+    {
+      "id": "vwin-patching",
+      "role": "conditional-proof",
+      "name": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-window",
+        "lines": [
+          30,
+          31
+        ],
+        "anchor": "published_hypotheses_from_patching_alt hN"
+      }
+    },
+    {
+      "id": "vwin-descent",
+      "role": "conditional-proof",
+      "name": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-window",
+        "lines": [
+          25,
+          29
+        ],
+        "anchor": "UpperTheory.V.HV.Core.of_four_alt"
+      }
+    },
+    {
+      "id": "vwin-core",
+      "role": "conditional-proof",
+      "name": "UpperTheory.V.HV.Core.of_four_alt",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-core",
+        "lines": [
+          18,
+          22
+        ],
+        "anchor": "exact vwin_of_counts"
+      }
+    },
+    {
+      "id": "vwin-counts",
+      "role": "conditional-proof",
+      "name": "UpperTheory.V.HV.vwin_of_counts",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-counts",
+        "lines": [
+          25,
+          33
+        ],
+        "anchor": "vwin_of_joint (jointWin_of_counts"
+      }
+    },
+    {
+      "id": "vwin-joint",
+      "role": "conditional-proof",
+      "name": "UpperTheory.V.vwin_of_joint",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "vwin-joint",
+        "lines": [
+          41,
+          133
+        ],
+        "anchor": "theorem vwin_of_joint (hJ : JointWin 401) (hc : ThmBc 401)"
+      }
+    },
+    {
+      "id": "top-plug",
+      "role": "forwarder",
+      "name": "UpperTheory.Top.every_character_of_green_v_win",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "top-plug",
+        "lines": [
+          16,
+          18
+        ],
+        "anchor": "UpperTheory.Top.imprimitive"
+      }
+    },
+    {
+      "id": "primitive-bridge",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "top-plug",
+        "lines": [
+          12,
+          15
+        ],
+        "anchor": "UpperTheory.Top.zeroFreeAll_of_topG"
+      }
+    },
+    {
+      "id": "imprimitive",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Top.imprimitive",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "imprimitive",
+        "lines": [
+          5,
+          35
+        ],
+        "anchor": "theorem UpperTheory.Top.imprimitive"
+      }
+    },
+    {
+      "id": "zero-free",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "zero-free",
+        "lines": [
+          26,
+          34
+        ],
+        "anchor": "zeroFreeOn_of_tiedWin_cyc"
+      }
+    },
+    {
+      "id": "zero-free-type",
+      "role": "proposition",
+      "name": "Formalism.HC.ZeroFreeAll",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "zero-free-type",
+        "lines": [
+          11,
+          18
+        ],
+        "anchor": "def ZeroFreeAll : Prop"
+      }
+    },
+    {
+      "id": "shape",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "top-shape",
+        "lines": [
+          33,
+          55
+        ],
+        "anchor": "theorem UpperTheory.Top.shape_closed_link_n_of_green"
+      }
+    },
+    {
+      "id": "family",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Top.topDesWin",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "top-family",
+        "lines": [
+          11,
+          31
+        ],
+        "anchor": "theorem topDesWin"
+      }
+    },
+    {
+      "id": "divisibility",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Top.divinN_of_hypV",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "divisibility",
+        "lines": [
+          117,
+          130
+        ],
+        "anchor": "exact h6 x g6"
+      }
+    },
+    {
+      "id": "log-square",
+      "role": "estimate",
+      "name": "UpperTheory.Top.log_sq_le_rpow",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "divisibility",
+        "lines": [
+          59,
+          74
+        ],
+        "anchor": "Real.log x ^ 2 ≤ x ^ eps"
+      }
+    },
+    {
+      "id": "supply-chi",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Top.supplyChi",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "supply-chi",
+        "lines": [
+          8,
+          16
+        ],
+        "anchor": "theorem UpperTheory.Top.supplyChi"
+      }
+    },
+    {
+      "id": "supply",
+      "role": "forwarder",
+      "name": "UpperTheory.Top.supplyOfAdm",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "supply-field",
+        "lines": [
+          17,
+          23
+        ],
+        "anchor": "UpperTheory.T3.supplyOfAdmOf UpperTheory.Top.hostOfField"
+      }
+    },
+    {
+      "id": "supply-proof",
+      "role": "conditional-proof",
+      "name": "UpperTheory.T3.supplyOfAdmOf",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "supply-proof",
+        "lines": [
+          24,
+          29
+        ],
+        "anchor": "hV QH.pairEx"
+      }
+    },
+    {
+      "id": "win-pairs",
+      "role": "conditional-proof",
+      "name": "UpperTheory.Top.winPairs",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "win-pairs",
+        "lines": [
+          5,
+          13
+        ],
+        "anchor": "VWinAt ψ 401 → PairEx"
+      }
+    },
+    {
+      "id": "pair-types",
+      "role": "estimate",
+      "name": "UpperTheory.Top.PairGood / PairEx",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "pair-types",
+        "lines": [
+          12,
+          30
+        ],
+        "anchor": "structure PairGood"
+      }
+    },
+    {
+      "id": "pair-ex",
+      "role": "mathematical-proof",
+      "name": "QH.pairEx",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "pair-ex",
+        "lines": [
+          112,
+          169
+        ],
+        "anchor": "theorem pairEx :"
+      }
+    },
+    {
+      "id": "pair-exists",
+      "role": "mathematical-proof",
+      "name": "QH.pair_exists",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "pair-exists",
+        "lines": [
+          9,
+          49
+        ],
+        "anchor": "theorem pair_exists :"
+      }
+    },
+    {
+      "id": "pair-share",
+      "role": "mathematical-proof",
+      "name": "QH.pair_share",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "pair-share",
+        "lines": [
+          26,
+          52
+        ],
+        "anchor": "theorem pair_share :"
+      }
+    },
+    {
+      "id": "stage-one",
+      "role": "estimate",
+      "name": "QH.stage1",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "stage-one",
+        "lines": [
+          36,
+          39
+        ],
+        "anchor": "¬ GoodQ N₀ C τ Y (Y ^ K) (Y ^ (ε / 5)) q"
+      }
+    },
+    {
+      "id": "good-q",
+      "role": "proposition",
+      "name": "QH.GoodQ",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "prime-bounds",
+        "lines": [
+          48,
+          49
+        ],
+        "anchor": "def GoodQ"
+      }
+    },
+    {
+      "id": "box-all",
+      "role": "proposition",
+      "name": "QH.BoxAll",
+      "status": "source-inspected",
+      "evidence": {
+        "source_id": "prime-bounds",
+        "lines": [
+          32,
+          39
+        ],
+        "anchor": "def BoxAll"
+      }
+    },
+    {
+      "id": "author-iteration",
+      "role": "research-question",
+      "status": "hypothetical",
+      "name": "Identify a source bound uniform over the author's proposed repeated theta lifts"
+    }
+  ],
+  "edges": [
+    {
+      "from": "main-grh",
+      "to": "claim-all",
+      "relation": "projects",
+      "detail": "second conjunct via .2.1",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "main",
+        "lines": [
+          10,
+          10
+        ],
+        "anchor": "claimAll.2.1"
+      }
+    },
+    {
+      "from": "main-half",
+      "to": "all-chi",
+      "relation": "calls",
+      "detail": "shared half-plane proof",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "main",
+        "lines": [
+          8,
+          8
+        ],
+        "anchor": ":= allChi"
+      }
+    },
+    {
+      "from": "main-half",
+      "to": "half-type",
+      "relation": "type",
+      "detail": "public proposition",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "main",
+        "lines": [
+          8,
+          8
+        ],
+        "anchor": "DirichletLNonvanishingRightOfHalf"
+      }
+    },
+    {
+      "from": "main-rh",
+      "to": "rh-wrapper",
+      "relation": "calls",
+      "detail": "zeta specialization",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "main",
+        "lines": [
+          4,
+          4
+        ],
+        "anchor": ":= rhOfAll"
+      }
+    },
+    {
+      "from": "rh-wrapper",
+      "to": "all-chi",
+      "relation": "supplies",
+      "detail": "argument of rh_of_every",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "wrappers",
+        "lines": [
+          9,
+          9
+        ],
+        "anchor": "rh_of_every allChi"
+      }
+    },
+    {
+      "from": "claim-all",
+      "to": "all-chi",
+      "relation": "supplies",
+      "detail": "argument of Claim.strip for the middle conjunct",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "wrappers",
+        "lines": [
+          16,
+          16
+        ],
+        "anchor": "Claim.strip allChi"
+      }
+    },
+    {
+      "from": "all-chi",
+      "to": "every-char",
+      "relation": "calls",
+      "detail": "shared arithmetic proof",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "wrappers",
+        "lines": [
+          7,
+          7
+        ],
+        "anchor": ":= UpperTheory.FinalTheorems.everyCharacter"
+      }
+    },
+    {
+      "from": "every-char",
+      "to": "every-type",
+      "relation": "type",
+      "detail": "output proposition",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          10,
+          10
+        ],
+        "anchor": ": UpperTheory.EveryCharacter"
+      }
+    },
+    {
+      "from": "every-char",
+      "to": "row-wrapper",
+      "relation": "calls",
+      "detail": "apply conditional theorem",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          11,
+          11
+        ],
+        "anchor": "everyCharacter_of_row UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+      }
+    },
+    {
+      "from": "every-char",
+      "to": "row-proof",
+      "relation": "supplies",
+      "detail": "actual row input",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          11,
+          11
+        ],
+        "anchor": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter"
+      }
+    },
+    {
+      "from": "row-proof",
+      "to": "row-lift",
+      "relation": "calls",
+      "detail": "parameterized by the named theta-lift input",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "row",
+        "lines": [
+          6,
+          6
+        ],
+        "anchor": "galoisRepresentations_of_thetaLift UpperTheory.TP.K.tLiftK"
+      }
+    },
+    {
+      "from": "row-proof",
+      "to": "row-type",
+      "relation": "type",
+      "detail": "specialized to recT",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "row",
+        "lines": [
+          6,
+          6
+        ],
+        "anchor": "UpperTheory.GalStar.Row0b recT"
+      }
+    },
+    {
+      "from": "row-alias",
+      "to": "row-type",
+      "relation": "type",
+      "detail": "specialize to IsRecT",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "row-alias",
+        "lines": [
+          6,
+          6
+        ],
+        "anchor": "UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc"
+      }
+    },
+    {
+      "from": "row-wrapper",
+      "to": "literature-call",
+      "relation": "calls",
+      "detail": "invoke literature handoff",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          8,
+          8
+        ],
+        "anchor": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+      }
+    },
+    {
+      "from": "row-wrapper",
+      "to": "literature-input",
+      "relation": "assembles",
+      "detail": "constructor arguments are row, recTExists, row",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          8,
+          8
+        ],
+        "anchor": "⟨h, UpperTheory.Zero.LLC.recTExists, h⟩"
+      }
+    },
+    {
+      "from": "row-wrapper",
+      "to": "ll-witness",
+      "relation": "supplies",
+      "detail": "middle constructor field",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          8,
+          8
+        ],
+        "anchor": "⟨h, UpperTheory.Zero.LLC.recTExists, h⟩"
+      }
+    },
+    {
+      "from": "row-wrapper",
+      "to": "vwin-row",
+      "relation": "supplies",
+      "detail": "VWin from the same row",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "conclusion",
+        "lines": [
+          8,
+          8
+        ],
+        "anchor": "(UpperTheory.One.vwin_of_row h)"
+      }
+    },
+    {
+      "from": "literature-input",
+      "to": "row-alias",
+      "relation": "type",
+      "detail": "two fields of type Row",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          215,
+          218
+        ],
+        "anchor": "_root_.UpperTheory.One.M.Row"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "handoff",
+      "relation": "calls",
+      "detail": "seven-argument application",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          810,
+          813
+        ],
+        "anchor": "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "eigen-bundle",
+      "relation": "supplies",
+      "detail": "P",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          811,
+          811
+        ],
+        "anchor": "(_root_.UpperTheory.LiteratureTheorems.published_results_eigen O)"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "local-bundle",
+      "relation": "supplies",
+      "detail": "F",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          811,
+          811
+        ],
+        "anchor": "(_root_.UpperTheory.LiteratureTheorems.published_results_first O)"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "theta-first",
+      "relation": "supplies",
+      "detail": "hA",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          811,
+          811
+        ],
+        "anchor": "(_root_.UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature O).1"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "theta-second",
+      "relation": "supplies",
+      "detail": "hM",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          811,
+          811
+        ],
+        "anchor": "(_root_.UpperTheory.LiteratureTheorems.theta_integrals_agree_and_local_matching_of_literature O).2"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "covol",
+      "relation": "supplies",
+      "detail": "hX",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          812,
+          812
+        ],
+        "anchor": "_root_.SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "ll-literature",
+      "relation": "supplies",
+      "detail": "hL",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          813,
+          813
+        ],
+        "anchor": "(_root_.UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature O) hV"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "vwin",
+      "relation": "forwarded",
+      "detail": "hV unchanged",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          810,
+          813
+        ],
+        "anchor": "(_root_.UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature O) hV"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "theta-agree",
+      "relation": "type",
+      "detail": "hA",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          69,
+          69
+        ],
+        "anchor": "WeilTensorModels.ThetaIntegralsAgree"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "local-match",
+      "relation": "type",
+      "detail": "hM",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          70,
+          70
+        ],
+        "anchor": "WeilTensorModels.LocalMatching"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "covol-type",
+      "relation": "type",
+      "detail": "hX",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          70,
+          70
+        ],
+        "anchor": "GlobalTheory.CovTop.CovolumeBoundOfX"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "ll-type",
+      "relation": "type",
+      "detail": "hL",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          70,
+          70
+        ],
+        "anchor": "UpperTheory.Zero.LLC.RecTExists"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "vwin",
+      "relation": "type",
+      "detail": "hV",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          70,
+          70
+        ],
+        "anchor": "(hV : VWin)"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "every-type",
+      "relation": "type",
+      "detail": "result",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          71,
+          71
+        ],
+        "anchor": "UpperTheory.EveryCharacter :="
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "top-plug",
+      "relation": "calls",
+      "detail": "Green input, hV, and assembled data",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          72,
+          72
+        ],
+        "anchor": "every_character_of_green_v_win (GlobalTheory.GreenBridge.green_of_regular P.greenRegularCharacters) hV"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "vwin",
+      "relation": "forwarded",
+      "detail": "hV passed unchanged to top plug",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          72,
+          72
+        ],
+        "anchor": "P.greenRegularCharacters) hV"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "nonempty",
+      "relation": "calls",
+      "detail": "P F hA hM hX hL and linked bound",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          73,
+          73
+        ],
+        "anchor": "nonempty_hyps_definite_side_of_closed_bound P F hA hM hX hL"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "linked-bound",
+      "relation": "supplies",
+      "detail": "uses P.nLink for each cDep",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          73,
+          73
+        ],
+        "anchor": "boundAtTwoThree_linked_of_recT P.nLink"
+      }
+    },
+    {
+      "from": "handoff",
+      "to": "link-parameters",
+      "relation": "calls",
+      "detail": "parameters indexed by hL and cDep",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          73,
+          73
+        ],
+        "anchor": "parametersOfDependence hL cDep"
+      }
+    },
+    {
+      "from": "nonempty",
+      "to": "eval-grid",
+      "relation": "calls",
+      "detail": "consumes hA and hM with other premises",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "handoff",
+        "lines": [
+          52,
+          54
+        ],
+        "anchor": "evaluation_grid_of_join F.howeDualityReal hM F C.join C.fe hA"
+      }
+    },
+    {
+      "from": "linked-bound",
+      "to": "linked-bound-type",
+      "relation": "type",
+      "detail": "family bound under LinkedAt and SlotNormCondition",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "local-two-three",
+        "lines": [
+          24,
+          26
+        ],
+        "anchor": "GlobalTheory.NLink.BoundAtTwoThreeFamilyFonAlt Fm"
+      }
+    },
+    {
+      "from": "theta-first",
+      "to": "theta-pair",
+      "relation": "projects",
+      "detail": "And.left",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          811,
+          811
+        ],
+        "anchor": "theta_integrals_agree_and_local_matching_of_literature O).1"
+      }
+    },
+    {
+      "from": "theta-second",
+      "to": "theta-pair",
+      "relation": "projects",
+      "detail": "And.right",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          811,
+          811
+        ],
+        "anchor": "theta_integrals_agree_and_local_matching_of_literature O).2"
+      }
+    },
+    {
+      "from": "theta-first",
+      "to": "theta-agree",
+      "relation": "type",
+      "detail": "left conjunct, hA",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          565,
+          565
+        ],
+        "anchor": "WeilTensorModels.ThetaIntegralsAgree ∧"
+      }
+    },
+    {
+      "from": "theta-second",
+      "to": "local-match",
+      "relation": "type",
+      "detail": "right conjunct, hM",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          565,
+          565
+        ],
+        "anchor": "∧ GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching"
+      }
+    },
+    {
+      "from": "theta-agree",
+      "to": "theta-decay",
+      "relation": "requires",
+      "detail": "for every IsTriple",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-types",
+        "lines": [
+          585,
+          588
+        ],
+        "anchor": "→ Decay B G om om' ∧"
+      }
+    },
+    {
+      "from": "theta-agree",
+      "to": "theta-scalar",
+      "relation": "requires",
+      "detail": "for every matching pair of maps",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-types",
+        "lines": [
+          587,
+          588
+        ],
+        "anchor": "→ OneConst B G X om om' R Rf ∧ Coinv"
+      }
+    },
+    {
+      "from": "theta-agree",
+      "to": "theta-steps",
+      "relation": "requires",
+      "detail": "two separately quantified sign triples",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-types",
+        "lines": [
+          589,
+          592
+        ],
+        "anchor": "StepAlpha σ e₁ e₂ s"
+      }
+    },
+    {
+      "from": "theta-pair",
+      "to": "theta-head",
+      "relation": "calls",
+      "detail": "bundle wrapper",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          565,
+          566
+        ],
+        "anchor": "PositivityTheory.ThKR.theoremK_head2"
+      }
+    },
+    {
+      "from": "theta-pair",
+      "to": "eis",
+      "relation": "supplies",
+      "detail": "EisBL argument",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          566,
+          566
+        ],
+        "anchor": "eis_bl_of_literature O"
+      }
+    },
+    {
+      "from": "theta-pair",
+      "to": "sw",
+      "relation": "supplies",
+      "detail": "SiegelWeilStd argument",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          566,
+          566
+        ],
+        "anchor": "siegel_weil_std_of_literature O"
+      }
+    },
+    {
+      "from": "eis",
+      "to": "eis-proof",
+      "relation": "calls",
+      "detail": "O unused by this wrapper",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          561,
+          562
+        ],
+        "anchor": "PositivityTheory.RgEis.Hd.eisBL"
+      }
+    },
+    {
+      "from": "sw",
+      "to": "sw-proof",
+      "relation": "calls",
+      "detail": "O unused by this wrapper",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          563,
+          564
+        ],
+        "anchor": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd"
+      }
+    },
+    {
+      "from": "theta-head",
+      "to": "theta-mod",
+      "relation": "calls",
+      "detail": "supplies modSt2 and forwards EisBL and SiegelWeilStd",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-head",
+        "lines": [
+          26,
+          27
+        ],
+        "anchor": "theoremK_head2_of_mod PositivityTheory.Sph.modSt2 h11 h12"
+      }
+    },
+    {
+      "from": "theta-mod",
+      "to": "theta-assembly",
+      "relation": "calls",
+      "detail": "supplies local and global input terms",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-head",
+        "lines": [
+          14,
+          20
+        ],
+        "anchor": "Tr.closeSph"
+      }
+    },
+    {
+      "from": "theta-assembly",
+      "to": "theta-leaves",
+      "relation": "calls",
+      "detail": "decay, coinvariants and constructed leaves",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-assembly",
+        "lines": [
+          192,
+          193
+        ],
+        "anchor": "agree_of_leaves h_Weil6_ThKG_Leaves h_GlobalTheory_ThK_KDecay h_GlobalTheory_ThK_KCoinv"
+      }
+    },
+    {
+      "from": "theta-leaves",
+      "to": "theta-agree",
+      "relation": "assembles",
+      "detail": "agree_of_parts",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-leaves",
+        "lines": [
+          7,
+          8
+        ],
+        "anchor": "agree_of_parts hd L.kConst hc L.kBeta L.kAlpha"
+      }
+    },
+    {
+      "from": "theta-leaves",
+      "to": "local-match",
+      "relation": "assembles",
+      "detail": "matching_of_parts",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-leaves",
+        "lines": [
+          7,
+          8
+        ],
+        "anchor": "matching_of_parts L.kReal L.kFin"
+      }
+    },
+    {
+      "from": "local-bundle",
+      "to": "hecke-one-literature",
+      "relation": "assembles",
+      "detail": "heckeLEntireAndNonzeroAtOne field",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          756,
+          756
+        ],
+        "anchor": "heckeLEntireAndNonzeroAtOne := (_root_.UpperTheory.LiteratureTheorems.hecke_l_entire_and_nonzero_at_one_of_literature O)"
+      }
+    },
+    {
+      "from": "hecke-one-literature",
+      "to": "hecke-one-wrapper",
+      "relation": "calls",
+      "detail": "O unused by this wrapper",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          427,
+          428
+        ],
+        "anchor": "PositivityTheory.Stage1.PM.heckeLEntireAndNonzeroAtOne"
+      }
+    },
+    {
+      "from": "hecke-one-wrapper",
+      "to": "hecke-one-proof",
+      "relation": "calls",
+      "detail": "delegates to holds theorem",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "hecke-one-wrapper",
+        "lines": [
+          18,
+          19
+        ],
+        "anchor": "GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne_holds"
+      }
+    },
+    {
+      "from": "hecke-one-proof",
+      "to": "hecke-one-type",
+      "relation": "type",
+      "detail": "nonvanishing at 1 for nontrivial unitary Hecke characters",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "hecke-one-proof",
+        "lines": [
+          112,
+          112
+        ],
+        "anchor": ": GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne"
+      }
+    },
+    {
+      "from": "theta-assembly",
+      "to": "hecke-one-proof",
+      "relation": "supplies",
+      "detail": "input of polynomial vanishing theorem",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "theta-assembly",
+        "lines": [
+          150,
+          150
+        ],
+        "anchor": "GlobalTheory.Published.HeckeLEntireAndNonzeroAtOne_holds"
+      }
+    },
+    {
+      "from": "covol",
+      "to": "covol-type",
+      "relation": "type",
+      "detail": "conclusion",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "covol-top",
+        "lines": [
+          16,
+          16
+        ],
+        "anchor": "GlobalTheory.CovTop.CovolumeBoundOfX"
+      }
+    },
+    {
+      "from": "literature-call",
+      "to": "covol-pubs",
+      "relation": "supplies",
+      "detail": "record supplied to the covolume producer",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          812,
+          812
+        ],
+        "anchor": "published_results_arithmetic O"
+      }
+    },
+    {
+      "from": "covol",
+      "to": "covol-g",
+      "relation": "calls",
+      "detail": "assemble the geometric and height inputs",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "covol-top",
+        "lines": [
+          18,
+          22
+        ],
+        "anchor": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt"
+      }
+    },
+    {
+      "from": "covol-g",
+      "to": "covol-assembly-wrapper",
+      "relation": "calls",
+      "detail": "assemble the lift bounds",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "covol-g",
+        "lines": [
+          58,
+          58
+        ],
+        "anchor": "covolX_of_truncation_badSet_lambda_lowBound"
+      }
+    },
+    {
+      "from": "covol-g",
+      "to": "lift-lambda",
+      "relation": "supplies",
+      "detail": "actual lambda-bound producer",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "covol-g",
+        "lines": [
+          58,
+          58
+        ],
+        "anchor": "liftLambdaBound_of_gram_meas hP gram meas"
+      }
+    },
+    {
+      "from": "covol-assembly-wrapper",
+      "to": "covol-assembly",
+      "relation": "calls",
+      "detail": "same conditional type",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "covol-steps-wrapper",
+        "lines": [
+          12,
+          12
+        ],
+        "anchor": "Assembly.covolX_of_lift_bounds_and_coreLe"
+      }
+    },
+    {
+      "from": "covol-assembly",
+      "to": "covol-inequality",
+      "relation": "calls",
+      "detail": "apply at each admissible point and lift index",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "covol-steps",
+        "lines": [
+          27,
+          33
+        ],
+        "anchor": "have main := lcv_le p i"
+      }
+    },
+    {
+      "from": "covol-assembly",
+      "to": "covol-loss",
+      "relation": "supplies",
+      "detail": "use fixed exponents before x and lift index",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "covol-steps",
+        "lines": [
+          25,
+          27
+        ],
+        "anchor": "exists_loss_le (show 0 < Fm.ez / 7 by positivity) A B (C1 + C2 + 1)"
+      }
+    },
+    {
+      "from": "covol-inequality",
+      "to": "lambda-type",
+      "relation": "requires",
+      "detail": "lambda bound at the chosen lift index",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "covol-estimate",
+        "lines": [
+          39,
+          43
+        ],
+        "anchor": "(hL : LamAt p i A)"
+      }
+    },
+    {
+      "from": "ll-literature",
+      "to": "ll-adapter",
+      "relation": "calls",
+      "detail": "eleven ancillary arguments appear at the call",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          313,
+          314
+        ],
+        "anchor": "_root_.UpperTheory.One.M.New.llOf_alt"
+      }
+    },
+    {
+      "from": "ll-literature",
+      "to": "ll-projection",
+      "relation": "supplies",
+      "detail": "first argument, returned unchanged",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          314,
+          314
+        ],
+        "anchor": "(_root_.UpperTheory.LiteratureTheorems.local_langlands_recT_exists_of_literature O)"
+      }
+    },
+    {
+      "from": "ll-adapter",
+      "to": "ll-type",
+      "relation": "forwarded",
+      "detail": "returns its first RecTExists proof",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "ll-forward",
+        "lines": [
+          18,
+          21
+        ],
+        "anchor": "fun h _ _ _ _ _ _ _ _ _ _ _ => h"
+      }
+    },
+    {
+      "from": "ll-projection",
+      "to": "literature-input",
+      "relation": "projects",
+      "detail": "O.localLanglandsExists",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "literature",
+        "lines": [
+          283,
+          284
+        ],
+        "anchor": "O.localLanglandsExists"
+      }
+    },
+    {
+      "from": "ll-witness",
+      "to": "ll-type",
+      "relation": "type",
+      "detail": "explicit proof supplied by row wrapper",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "ll-exists",
+        "lines": [
+          20,
+          22
+        ],
+        "anchor": "UpperTheory.Zero.LLC.RecTExists := by"
+      }
+    },
+    {
+      "from": "vwin-row",
+      "to": "vwin-top",
+      "relation": "calls",
+      "detail": "OpenImageCondition.mk h, baseChangeN, h",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-row",
+        "lines": [
+          4,
+          5
+        ],
+        "anchor": "automorphic_window_of_inputs (UpperTheory.LiteratureTheorems.OpenImageCondition.mk h) UpperTheory.BaseChangeIdentities.baseChangeN h"
+      }
+    },
+    {
+      "from": "vwin-row",
+      "to": "vwin-base-change",
+      "relation": "supplies",
+      "detail": "middle argument",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-row",
+        "lines": [
+          5,
+          5
+        ],
+        "anchor": "UpperTheory.BaseChangeIdentities.baseChangeN h"
+      }
+    },
+    {
+      "from": "vwin-row",
+      "to": "vwin",
+      "relation": "type",
+      "detail": "conclusion",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-row",
+        "lines": [
+          4,
+          4
+        ],
+        "anchor": ": UpperTheory.Top.VWin"
+      }
+    },
+    {
+      "from": "vwin-top",
+      "to": "vwin-from-inputs",
+      "relation": "calls",
+      "detail": "supplies CM bundle with the other arguments",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-top",
+        "lines": [
+          71,
+          74
+        ],
+        "anchor": "v_window_of_depth_zero_residual_bc_cm O bc gal"
+      }
+    },
+    {
+      "from": "vwin-from-inputs",
+      "to": "vwin-window",
+      "relation": "calls",
+      "detail": "supplies assembled local, automorphic, cohomological and CM record",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-top",
+        "lines": [
+          55,
+          58
+        ],
+        "anchor": "UpperTheory.V.v_window_of_literal_automorphy_n"
+      }
+    },
+    {
+      "from": "vwin-window",
+      "to": "vwin-patching",
+      "relation": "calls",
+      "detail": "forwards the literature record",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-window",
+        "lines": [
+          33,
+          34
+        ],
+        "anchor": "v_window_of_automorphy_csd_ss_mono_odd hN"
+      }
+    },
+    {
+      "from": "vwin-patching",
+      "to": "vwin-descent",
+      "relation": "calls",
+      "detail": "supplies the result of patching",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-window",
+        "lines": [
+          30,
+          31
+        ],
+        "anchor": "vwin_of_hypotheses_H_E_alt"
+      }
+    },
+    {
+      "from": "vwin-descent",
+      "to": "vwin-core",
+      "relation": "calls",
+      "detail": "Lemma K and counts I, II, III, V",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-window",
+        "lines": [
+          25,
+          29
+        ],
+        "anchor": "UpperTheory.V.HV.Core.of_four_alt"
+      }
+    },
+    {
+      "from": "vwin-core",
+      "to": "vwin-counts",
+      "relation": "calls",
+      "detail": "ThmBab specialized to 401",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-core",
+        "lines": [
+          18,
+          22
+        ],
+        "anchor": "exact vwin_of_counts"
+      }
+    },
+    {
+      "from": "vwin-counts",
+      "to": "vwin-joint",
+      "relation": "calls",
+      "detail": "JointWin 401 and ThmBc 401",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-counts",
+        "lines": [
+          30,
+          33
+        ],
+        "anchor": "vwin_of_joint (jointWin_of_counts"
+      }
+    },
+    {
+      "from": "vwin-joint",
+      "to": "vwin",
+      "relation": "type",
+      "detail": "iterates over ψ via vwinAt_of_joint",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-joint",
+        "lines": [
+          131,
+          133
+        ],
+        "anchor": "exact vwinAt_of_joint (by norm_num) hJ hc ψ"
+      }
+    },
+    {
+      "from": "vwin",
+      "to": "vwin-bound",
+      "relation": "requires",
+      "detail": "VAt at each x in the selected window",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "vwin-type",
+        "lines": [
+          41,
+          49
+        ],
+        "anchor": "VVle E ⌊x ^ Ct⌋₊"
+      }
+    },
+    {
+      "from": "top-plug",
+      "to": "primitive-bridge",
+      "relation": "calls",
+      "detail": "primitive nonvanishing before level change",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "top-plug",
+        "lines": [
+          16,
+          18
+        ],
+        "anchor": "zero_free_all_of_green_v_win hG hV h"
+      }
+    },
+    {
+      "from": "top-plug",
+      "to": "imprimitive",
+      "relation": "calls",
+      "detail": "conductor and extra Euler factors",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "top-plug",
+        "lines": [
+          18,
+          18
+        ],
+        "anchor": "UpperTheory.Top.imprimitive"
+      }
+    },
+    {
+      "from": "primitive-bridge",
+      "to": "shape",
+      "relation": "calls",
+      "detail": "build the TopG input using Green",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "top-plug",
+        "lines": [
+          14,
+          15
+        ],
+        "anchor": "UpperTheory.Top.shape_closed_link_n_of_green hG"
+      }
+    },
+    {
+      "from": "primitive-bridge",
+      "to": "zero-free",
+      "relation": "calls",
+      "detail": "uses la = 3/2",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "top-plug",
+        "lines": [
+          14,
+          15
+        ],
+        "anchor": "zeroFreeAll_of_topG (la := 3 / 2)"
+      }
+    },
+    {
+      "from": "primitive-bridge",
+      "to": "supply-chi",
+      "relation": "supplies",
+      "detail": "supplies each host from hV ψ",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "top-plug",
+        "lines": [
+          15,
+          15
+        ],
+        "anchor": "UpperTheory.Top.supplyChi ψ (hV ψ)"
+      }
+    },
+    {
+      "from": "zero-free",
+      "to": "zero-free-type",
+      "relation": "type",
+      "detail": "source primitive conclusion",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "zero-free",
+        "lines": [
+          26,
+          26
+        ],
+        "anchor": ": ZeroFreeAll := by"
+      }
+    },
+    {
+      "from": "imprimitive",
+      "to": "zero-free-type",
+      "relation": "type",
+      "detail": "consumes primitive half-plane nonvanishing",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "imprimitive",
+        "lines": [
+          5,
+          10
+        ],
+        "anchor": "ZeroFreeAll →"
+      }
+    },
+    {
+      "from": "shape",
+      "to": "family",
+      "relation": "calls",
+      "detail": "combine link hypotheses",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "top-shape",
+        "lines": [
+          52,
+          55
+        ],
+        "anchor": "exact UpperTheory.Top.topDesWin"
+      }
+    },
+    {
+      "from": "family",
+      "to": "divisibility",
+      "relation": "calls",
+      "detail": "uses hV for family input HypV",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "top-family",
+        "lines": [
+          29,
+          29
+        ],
+        "anchor": "divinN_of_hypV Fm h0"
+      }
+    },
+    {
+      "from": "divisibility",
+      "to": "log-square",
+      "relation": "supplies",
+      "detail": "eventual bound used in divinN_at at scale x",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "divisibility",
+        "lines": [
+          122,
+          130
+        ],
+        "anchor": "obtain ⟨x6, h6⟩ := log_sq_le_rpow heps"
+      }
+    },
+    {
+      "from": "supply-chi",
+      "to": "supply",
+      "relation": "calls",
+      "detail": "combine window and admissible ranks",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "supply-chi",
+        "lines": [
+          10,
+          16
+        ],
+        "anchor": "refine supplyOfAdm ψ hψ"
+      }
+    },
+    {
+      "from": "supply",
+      "to": "supply-proof",
+      "relation": "calls",
+      "detail": "instantiates host producer",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "supply-field",
+        "lines": [
+          23,
+          23
+        ],
+        "anchor": "UpperTheory.T3.supplyOfAdmOf UpperTheory.Top.hostOfField"
+      }
+    },
+    {
+      "from": "supply-proof",
+      "to": "win-pairs",
+      "relation": "calls",
+      "detail": "combines distinct VWinAt and PairEx inputs",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "supply-proof",
+        "lines": [
+          29,
+          29
+        ],
+        "anchor": "hV QH.pairEx"
+      }
+    },
+    {
+      "from": "supply-proof",
+      "to": "pair-ex",
+      "relation": "supplies",
+      "detail": "actual prime-pair producer",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "supply-proof",
+        "lines": [
+          29,
+          29
+        ],
+        "anchor": "QH.pairEx"
+      }
+    },
+    {
+      "from": "win-pairs",
+      "to": "pair-types",
+      "relation": "requires",
+      "detail": "quantified existence of good prime pairs",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "win-pairs",
+        "lines": [
+          5,
+          13
+        ],
+        "anchor": "VWinAt ψ 401 → PairEx"
+      }
+    },
+    {
+      "from": "win-pairs",
+      "to": "vwin",
+      "relation": "requires",
+      "detail": "individual character specialization",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "win-pairs",
+        "lines": [
+          5,
+          13
+        ],
+        "anchor": "VWinAt ψ 401 → PairEx"
+      }
+    },
+    {
+      "from": "pair-ex",
+      "to": "pair-types",
+      "relation": "type",
+      "detail": "PairEx",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "pair-ex",
+        "lines": [
+          112,
+          114
+        ],
+        "anchor": "UpperTheory.Top.PairEx := by"
+      }
+    },
+    {
+      "from": "pair-ex",
+      "to": "pair-exists",
+      "relation": "calls",
+      "detail": "selected q and d via GoodQ and GoodD",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "pair-ex",
+        "lines": [
+          115,
+          130
+        ],
+        "anchor": "obtain ⟨C, hC, hpair⟩ := pair_exists"
+      }
+    },
+    {
+      "from": "pair-exists",
+      "to": "pair-share",
+      "relation": "calls",
+      "detail": "applies pair_share at eta = 1/2",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "pair-exists",
+        "lines": [
+          13,
+          15
+        ],
+        "anchor": "obtain ⟨C, hC, H⟩ := pair_share"
+      }
+    },
+    {
+      "from": "pair-share",
+      "to": "stage-one",
+      "relation": "calls",
+      "detail": "first prime selection",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "pair-share",
+        "lines": [
+          32,
+          36
+        ],
+        "anchor": "obtain ⟨C1, hC1, h1⟩ := stage1"
+      }
+    },
+    {
+      "from": "stage-one",
+      "to": "good-q",
+      "relation": "type",
+      "detail": "bound the bad subset",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "stage-one",
+        "lines": [
+          38,
+          39
+        ],
+        "anchor": "¬ GoodQ N₀ C τ Y (Y ^ K) (Y ^ (ε / 5)) q"
+      }
+    },
+    {
+      "from": "good-q",
+      "to": "box-all",
+      "relation": "requires",
+      "detail": "for each base character at level N₀",
+      "status": "source-backed",
+      "evidence": {
+        "source_id": "prime-bounds",
+        "lines": [
+          48,
+          49
+        ],
+        "anchor": "BoxAll (N₀ * Real.exp z)"
+      }
+    },
+    {
+      "from": "lift-lambda",
+      "to": "author-iteration",
+      "relation": "possible-connection",
+      "status": "inferred",
+      "detail": "Quantifier and normalization comparison remains open"
+    }
+  ]
+}

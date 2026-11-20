@@ -28,7 +28,11 @@ The [verification landscape](docs/verification-landscape-2026-11-21.md) and [evi
 
 ## Task 03 extraction and statement audit
 
-The independent Mathlib proof of the Euler-factor lemma used in `Claim.prim_zero` passed the Lean 4.33.1 build and local kernel replay. The three Dirichlet formulations are equivalent and imply the two zeta formulations, as checked in the same project. The audit also gives an explicit imaginary-axis zero for an imprimitive character. The next source audit will trace the theorem that turns theta-integral comparison and local matching into the shared nonvanishing assertion. [Euler-factor proof](docs/claim-factor-extraction.md) · [Semantic audit](docs/semantic-audit-dirichlet.md) · [Run report](docs/codex-task-03-result.md) · [Ranked experiments](docs/next-research-experiments.md)
+The independent Mathlib proof of the Euler-factor lemma used in `Claim.prim_zero` passed the Lean 4.33.1 build and local kernel replay. The three Dirichlet formulations are equivalent and imply the two zeta formulations, as checked in the same project. The audit also gives an explicit imaginary-axis zero for an imprimitive character. [Euler-factor proof](docs/claim-factor-extraction.md) · [Semantic audit](docs/semantic-audit-dirichlet.md) · [Run report](docs/codex-task-03-result.md)
+
+## Task 04 arithmetic handoff
+
+The pinned source trace identifies the seven inputs to the handoff, the two theta projections and the cohomological window in `VWin`. The standalone Lean extraction checks the exact logarithm bound used in a divisibility step and its failure at exponent zero. The GRH claim remains unverified in this repository. The next experiment targets a fixed-modulus instance of the exceptional-prime bound used to choose theta host fields. [Arithmetic audit](docs/arithmetic-handoff-audit.md) · [Run report](docs/codex-task-04-result.md) · [Ranked experiments](docs/next-research-experiments.md)
 
 ## First milestones
 
@@ -62,7 +66,7 @@ python tools/validate_claims.py
 python -m unittest discover -s tests -v
 ```
 
-The Python tests validate research metadata. Use `python tools/check_entrypoint_sources.py` with network access to compare six small pinned sources and the extraction's declarations. The [Task 03 run report](docs/codex-task-03-result.md) gives the pinned Lean build commands.
+The Python tests validate research metadata and the arithmetic source registry offline. With network access, run `python tools/check_entrypoint_sources.py` for the entrypoint and Task 03 extraction checks, and `python tools/check_arithmetic_handoff.py` for the arithmetic pins, source anchors and Task 04 extraction signature. [Task 04 commands and limits](docs/codex-task-04-result.md)
 
 ## Layout
 

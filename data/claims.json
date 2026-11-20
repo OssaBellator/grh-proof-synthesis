@@ -139,6 +139,34 @@
       "proof_obligation": "Distinguish formal equivalence between the Lean propositions from complete equivalence to every classical meromorphic GRH convention; check boundary zeros for imprimitive factors and principal pole guard.",
       "verification_note": "Independently compiled conditional implication and equivalence proofs in Lean 4.33.1 with pinned Mathlib; standard three axioms only. No proof that any GRH proposition itself holds.",
       "as_of": "2026-11-21"
+    },
+    {
+      "id": "A-006",
+      "track": "alpoge",
+      "statement": "The pinned seven-input theorem UpperTheory.Lit.every_character_of_theta_integrals_local_matching conditionally derives UpperTheory.EveryCharacter from explicit theta-integral agreement, local matching, a covolume bound, local Langlands existence, VWin and two records P,F.",
+      "status": "source_inspected",
+      "kind": "proposed_method",
+      "source_urls": [
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+        "https://github.com/OssaBellator/grh-proof-synthesis/blob/main/docs/arithmetic-handoff-audit.md"
+      ],
+      "proof_obligation": "Independently audit the producers of the quantified hypotheses, especially VWin, first-stage exceptional-prime density, theta decay and comparison-scalar estimates; do not mistake the conditional wrapper for a GRH proof.",
+      "verification_note": "Sixty files checked by size/SHA-256 and line-local source anchors; handoff theorem at source lines 69–73. Graph has 92 named nodes/110 edges but is a selective source-text audit, not a recompiled upstream proof.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "A-007",
+      "track": "alpoge",
+      "statement": "The source-used bound (log x)^2 ≤ x^eps eventually for eps > 0 has an independent Lean 4.33.1 proof with matching type; a separate proof establishes failure for eps=0.",
+      "status": "reproduced",
+      "kind": "theorem",
+      "source_urls": [
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+        "https://github.com/OssaBellator/grh-proof-synthesis/blob/main/lean/extraction/Extraction/LogSquare.lean"
+      ],
+      "proof_obligation": "Identify exact use of this elementary logarithmic estimate in source consumers and independently test whether all later constants are uniform under the required family and lift parameters.",
+      "verification_note": "Source declaration signature matched; independently rerun pinned Lean 4.33.1 project successfully (3579 jobs). Both declarations depend only on propext, Classical.choice and Quot.sound. This bound is standard, not the GRH bottleneck.",
+      "as_of": "2026-11-21"
     }
   ]
 }
