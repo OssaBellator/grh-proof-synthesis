@@ -111,6 +111,34 @@
       "proof_obligation": "Formalize the precise test-function compatibility question; justify any alternative positivity or bridge identity without assuming GRH.",
       "verification_note": "Inspected manuscript §1.7.2 and Theorem 12.5.1.1 (physical pp. 35–36 and 519). Source statement verified; no general GRH consequence proved.",
       "as_of": "2026-11-21"
+    },
+    {
+      "id": "A-004",
+      "track": "alpoge",
+      "statement": "A source-used Euler-factor nonvanishing lemma from the submitted ClaimStrip.lean has been independently reproduced in Mathlib with the exact theorem statement.",
+      "status": "reproduced",
+      "kind": "theorem",
+      "source_urls": [
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+        "https://github.com/OssaBellator/grh-proof-synthesis/blob/c2fa7e241c6556ca18878dc88ebf7bb8bd49647d/lean/extraction/Extraction/Factor.lean"
+      ],
+      "proof_obligation": "Audit the next source-used consumer Claim.prim_zero and then isolate a nontrivial quantitative arithmetic lemma; this basic factor bound is not a hard GRH step.",
+      "verification_note": "Pinned source hash and signature matched. Independent Lean 4.33.1/Mathlib build passed 3578 jobs; #print axioms lists only propext, Classical.choice and Quot.sound; three boundary and character controls passed.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "A-005",
+      "track": "alpoge",
+      "statement": "The three submitted Dirichlet zero-location and right-half-plane nonvanishing formulations are equivalent, and imply Mathlib's RiemannHypothesis, using established Mathlib analytic facts.",
+      "status": "reproduced",
+      "kind": "theorem",
+      "source_urls": [
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Statements.lean",
+        "https://github.com/OssaBellator/grh-proof-synthesis/blob/c2fa7e241c6556ca18878dc88ebf7bb8bd49647d/lean/extraction/Extraction/Semantics.lean"
+      ],
+      "proof_obligation": "Distinguish formal equivalence between the Lean propositions from complete equivalence to every classical meromorphic GRH convention; check boundary zeros for imprimitive factors and principal pole guard.",
+      "verification_note": "Independently compiled conditional implication and equivalence proofs in Lean 4.33.1 with pinned Mathlib; standard three axioms only. No proof that any GRH proposition itself holds.",
+      "as_of": "2026-11-21"
     }
   ]
 }
