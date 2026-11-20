@@ -1,0 +1,583 @@
+{
+  "schema_version": 1,
+  "mirror": "CocoSgt/riemann-hypothesis-lean",
+  "revision": "0fb9869c6e6d7b54b67de803af0e0be29d37fc22",
+  "mirror_import_date_utc": "2026-11-20",
+  "evidence": "source_inspected",
+  "sources": [
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/Stage1Succ.lean",
+      "bytes": 5255,
+      "sha256": "5d3d6a56d035eb031bd207d4474a768b65dadf148579df0cb4815c51a1206819",
+      "anchors": [
+        {
+          "name": "stage1_prim",
+          "lines": [
+            14,
+            16
+          ],
+          "text": "private theorem stage1_prim (N₀ : ℕ) (hN : 0 < N₀) (ξ : DirichletCharacter ℂ N₀) :\n    ∃ ξ' : (Σ N : ℕ, DirichletCharacter ℂ (N + 1)), ξ'.2.IsPrimitive ∧ ξ'.1 + 1 ≤ N₀ ∧\n      ∀ n : ℕ, n.Coprime N₀ → ξ'.2 (n : ZMod (ξ'.1 + 1)) = ξ (n : ZMod N₀) := by"
+        },
+        {
+          "name": "stage1",
+          "lines": [
+            36,
+            39
+          ],
+          "text": "theorem stage1 :\n    ∃ C : ℝ, 0 < C ∧ ∀ (ε τ K η : ℝ) (N₀ : ℕ), 0 < ε → ε < 1 / 52 → 0 < τ → 1 ≤ K → 0 < η → 0 < N₀ → ∃ Y₀ : ℝ, ∀ Y ≥ Y₀,\n      (primePairSetFirst (Y ^ (ε / 5))).Nonempty ∧ ∀ B ⊆ primePairSetFirst (Y ^ (ε / 5)),\n        (∀ q ∈ B, ¬ GoodQ N₀ C τ Y (Y ^ K) (Y ^ (ε / 5)) q) → (B.card : ℝ) ≤ η * (primePairSetFirst (Y ^ (ε / 5))).card := by"
+        },
+        {
+          "name": "stage1 application of stage",
+          "lines": [
+            41,
+            46
+          ],
+          "text": "  obtain ⟨C, hC, hst⟩ := stage\n  refine ⟨C, hC, fun ε τ K η N₀ hε hε' hτ hK hη hN => ?_⟩\n  haveI : NeZero N₀ := ⟨hN.ne'⟩\n  haveI : Fintype (DirichletCharacter ℂ N₀) := Fintype.ofFinite _\n  choose g hg1 hg2 hg3 using stage1_prim N₀ hN\n  obtain ⟨Y₁, hY₁⟩ := hst ε τ K η (Fintype.card (DirichletCharacter ℂ N₀)) hε (by linarith) hτ hK hη"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/StagePow.lean",
+      "bytes": 9681,
+      "sha256": "0664861db51e1c2c2ada99121d6988d15f47c2ecab5a6b3bc62b127c32ae75d1",
+      "anchors": [
+        {
+          "name": "stage_log",
+          "lines": [
+            16,
+            17
+          ],
+          "text": "private theorem stage_log {ε : ℝ} (hε : 0 < ε) :\n    ∀ᶠ Y : ℝ in Filter.atTop, 3 / 2 * (Y ^ (ε / 5) * Real.log Y ^ 2) ≤ Y ^ (ε / 4) := by"
+        },
+        {
+          "name": "stage_pow",
+          "lines": [
+            29,
+            30
+          ],
+          "text": "private theorem stage_pow (C : ℝ) {η : ℝ} (hη : 0 < η) :\n    ∀ᶠ U : ℝ in Filter.atTop, |C| * U ^ (3 / 8 : ℝ) ≤ η / 2 * U ^ (9 / 10 : ℝ) := by"
+        },
+        {
+          "name": "stage",
+          "lines": [
+            41,
+            47
+          ],
+          "text": "theorem stage :\n    ∃ C : ℝ, 0 < C ∧ ∀ (ε τ K η : ℝ) (R : ℕ), 0 < ε → ε ≤ 1 / 4 → 0 < τ → 1 ≤ K → 0 < η → ∃ Y₀ : ℝ, ∀ Y ≥ Y₀,\n      ∀ (U F : ℝ) (m₀ a₀ : ℕ) (Ξ : Finset (Σ N : ℕ, DirichletCharacter ℂ (N + 1))), admitted ε Y U m₀ a₀ → (∀ p : ℕ, p.Prime → p ∣ m₀ → (p : ℝ) ≤ Y ^ (ε / 5) ∨ (Y ^ K) ^ 400 < (p : ℝ)) →\n      1 ≤ F → F ≤ U ^ (1 / 2 : ℝ) → Ξ.card ≤ R → (∀ ξ ∈ Ξ, ξ.2.IsPrimitive ∧ ((ξ.1 + 1 : ℕ) : ℝ) ≤ F) →\n      (PPset m₀ a₀ U).Nonempty ∧ ∀ B ⊆ PPset m₀ a₀ U,\n        (∀ q ∈ B, ∃ ξ ∈ Ξ, ∃ M : ℕ, M ≠ 0 ∧ ¬ BoxAll (F * U) C τ Y (Y ^ K) (fun n => ξ.2 n * J q n) M) →\n        (B.card : ℝ) ≤ η * (PPset m₀ a₀ U).card := by"
+        },
+        {
+          "name": "stage input applications",
+          "lines": [
+            49,
+            56
+          ],
+          "text": "  obtain ⟨C, hC, hbox⟩ := box_of_S\n  obtain ⟨Cm, hCm, hms⟩ := meanSqK\n  obtain ⟨Cb, hcb⟩ := count_bad\n  refine ⟨C, hC, fun ε τ K η R hε hε4 hτ hK hη => ?_⟩\n  obtain ⟨Y₁, hY₁⟩ := hbox ε τ K hε hε4 hτ hK\n  obtain ⟨Y₂, hY₂⟩ := hms ε K hε (by linarith) hK\n  obtain ⟨Y₃, hY₃⟩ := bad_share Cm τ (η / (2 * (R + 1))) hCm.le hτ (by positivity)\n  obtain ⟨Y₄, hY₄⟩ := count_a Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds Formalism.ZeroFreeDirichlet.excBound ε hε"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PrimeSetTwoBounds.lean",
+      "bytes": 3089,
+      "sha256": "5add5a8d499ab3c7d84e64e3ea1c529d09b7ecc472a7fa82e700881196861ec2",
+      "anchors": [
+        {
+          "name": "S",
+          "lines": [
+            13,
+            14
+          ],
+          "text": "def S (Z y : ℝ) (q : ℕ) (κ : ℕ → ℂ) : ℂ :=\n  ∑ n ∈ Icc 1 ⌊Z⌋₊, ((cN y n : ℝ) : ℂ) * κ n * ((jacobiSym (n : ℤ) q : ℤ) : ℂ)"
+        },
+        {
+          "name": "J",
+          "lines": [
+            16,
+            16
+          ],
+          "text": "def J (q n : ℕ) : ℂ := ((jacobiSym (n : ℤ) q : ℤ) : ℂ)"
+        },
+        {
+          "name": "admitted",
+          "lines": [
+            18,
+            24
+          ],
+          "text": "structure admitted (ε Y U : ℝ) (m₀ a₀ : ℕ) : Prop where\n  pos : 0 < m₀\n  eight : 8 ∣ m₀\n  coprime : a₀.Coprime m₀\n  log_m : (1 / 4) * Real.log Y ^ 2 * Real.log m₀ ≤ Real.log U\n  lo : Y ^ (ε / 6) ≤ Real.log U\n  hi : Real.log U ≤ Y ^ (ε / 5) * Real.log Y ^ 2"
+        },
+        {
+          "name": "MeanSq",
+          "lines": [
+            26,
+            27
+          ],
+          "text": "def MeanSq (C Z : ℝ) (P : Finset ℕ) (A : Set ℝ) : Prop :=\n  ∀ y ∈ A, ∀ κ : ℕ → ℂ, (∀ n, ‖κ n‖ ≤ 1) → ∑ q ∈ P, ‖S Z y q κ‖ ^ 2 ≤ C * y * Real.log y * P.card"
+        },
+        {
+          "name": "Ind",
+          "lines": [
+            29,
+            30
+          ],
+          "text": "def Ind {N : ℕ} (ψ : DirichletCharacter ℂ N) (f : ℕ → ℂ) (M : ℕ) : Prop :=\n  ψ.IsPrimitive ∧ ∀ n : ℕ, n.Coprime M → ψ (n : ZMod N) = f n"
+        },
+        {
+          "name": "GoodC",
+          "lines": [
+            32,
+            33
+          ],
+          "text": "def GoodC (Q : ℝ) {N : ℕ} [NeZero N] (ψ : DirichletCharacter ℂ N) : Prop :=\n  ψ ≠ 1 ∧ (N : ℝ) ≤ Q ∧ ZeroFreeBox Q ψ"
+        },
+        {
+          "name": "Box",
+          "lines": [
+            35,
+            36
+          ],
+          "text": "def Box (Q C τ Y X : ℝ) {N : ℕ} [NeZero N] (ψ : DirichletCharacter ℂ N) : Prop :=\n  GoodC Q ψ ∧ ‖logDerivLAtOne ψ‖ ≤ C * Real.log Y ∧ ∀ y ∈ Set.Icc Y X, ‖Gchi ψ y‖ ≤ y ^ (1 / 2 + τ)"
+        },
+        {
+          "name": "BoxAll",
+          "lines": [
+            38,
+            39
+          ],
+          "text": "def BoxAll (Q C τ Y X : ℝ) (f : ℕ → ℂ) (M : ℕ) : Prop :=\n  ∀ (N : ℕ) [NeZero N] (ψ : DirichletCharacter ℂ N), Ind ψ f M → Box Q C τ Y X ψ"
+        },
+        {
+          "name": "primePairSetFirst",
+          "lines": [
+            41,
+            41
+          ],
+          "text": "def primePairSetFirst (z : ℝ) : Finset ℕ := PPset 8 3 (Real.exp z)"
+        },
+        {
+          "name": "GoodQ",
+          "lines": [
+            48,
+            49
+          ],
+          "text": "def GoodQ (N₀ : ℕ) (C τ Y X z : ℝ) (q : ℕ) : Prop :=\n  ∀ ξ : DirichletCharacter ℂ N₀, BoxAll (N₀ * Real.exp z) C τ Y X (fun n => ξ n * J q n) (N₀ * q)"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/GL3MeanSquares/SecondEstimateOfIntervalHypothesis.lean",
+      "bytes": 20797,
+      "sha256": "0e9ca3d5606ed5d1cb51146ad43124b5df25a4d1e376fef2a4153f92e2fc4a44",
+      "anchors": [
+        {
+          "name": "logDerivLAtOne",
+          "lines": [
+            14,
+            15
+          ],
+          "text": "def logDerivLAtOne {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) : ℂ :=\n  deriv (DirichletCharacter.LFunction χ) 1 / DirichletCharacter.LFunction χ 1"
+        },
+        {
+          "name": "Gchi",
+          "lines": [
+            17,
+            18
+          ],
+          "text": "def Gchi {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (y : ℝ) : ℂ :=\n  (∑ n ∈ Icc 1 ⌊y⌋₊, ((Λ n : ℝ) : ℂ) * χ (n : ZMod q) * ((y / n - 1 : ℝ) : ℂ)) + (y : ℂ) * logDerivLAtOne χ"
+        },
+        {
+          "name": "cN",
+          "lines": [
+            23,
+            23
+          ],
+          "text": "def cN (x : ℝ) (n : ℕ) : ℝ := Λ n * min 1 (x / n)"
+        },
+        {
+          "name": "Sz",
+          "lines": [
+            25,
+            26
+          ],
+          "text": "def Sz {q : ℕ} (χ : DirichletCharacter ℂ q) (x z : ℝ) : ℂ :=\n  ∑ n ∈ Icc 1 ⌊z⌋₊, ((cN x n : ℝ) : ℂ) * χ (n : ZMod q)"
+        },
+        {
+          "name": "tailL",
+          "lines": [
+            28,
+            29
+          ],
+          "text": "def tailL {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (z : ℝ) : ℂ :=\n  - logDerivLAtOne χ - ∑ n ∈ Icc 1 ⌊z⌋₊, ((Λ n : ℝ) : ℂ) * χ (n : ZMod q) / (n : ℂ)"
+        },
+        {
+          "name": "ZeroFreeBox",
+          "lines": [
+            44,
+            45
+          ],
+          "text": "def ZeroFreeBox {N : ℕ} [NeZero N] (Q : ℝ) (χ : DirichletCharacter ℂ N) : Prop :=\n  ∀ s : ℂ, 1 - 1 / 400 < s.re → |s.im| ≤ Q → DirichletCharacter.LFunction χ s ≠ 0"
+        },
+        {
+          "name": "PPset",
+          "lines": [
+            50,
+            51
+          ],
+          "text": "def PPset (m₀ a₀ : ℕ) (X : ℝ) : Finset ℕ :=\n  (Icc 1 ⌊X⌋₊).filter (fun q => q.Prime ∧ q % m₀ = a₀ % m₀ ∧ X ^ (1 / 2 : ℝ) < (q : ℝ))"
+        },
+        {
+          "name": "GFiniteSplit",
+          "lines": [
+            119,
+            121
+          ],
+          "text": "def GFiniteSplit : Prop :=\n  ∀ (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q) (x z : ℝ), 0 < x → x ≤ z →\n    Gchi χ x = - Sz χ x z - (x : ℂ) * tailL χ z"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/TwistPrim.lean",
+      "bytes": 1065,
+      "sha256": "473ad97521157ee3cc04047e2a7df19429307b136849d888ed4489ee1ec0428d",
+      "anchors": [
+        {
+          "name": "twist_prim",
+          "lines": [
+            9,
+            11
+          ],
+          "text": "theorem twist_prim :\n    ∀ (f q : ℕ) [NeZero f] (ξ : DirichletCharacter ℂ f), ξ.IsPrimitive → q.Prime → q ≠ 2 → ¬ q ∣ f →\n      ∃ ψ : DirichletCharacter ℂ (f * q), ψ.IsPrimitive ∧ ψ ≠ 1 ∧ ∀ n : ℕ, ψ (n : ZMod (f * q)) = ξ (n : ZMod f) * J q n := by"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/IndUnique.lean",
+      "bytes": 2813,
+      "sha256": "1949452bc5818e1bfcb5f0244ca2897160dd92e493bc921afac3baf3e7ca79f1",
+      "anchors": [
+        {
+          "name": "ind_unique",
+          "lines": [
+            7,
+            10
+          ],
+          "text": "theorem ind_unique :\n    ∀ (N N' M : ℕ) [NeZero N] [NeZero N'] (ψ : DirichletCharacter ℂ N) (ψ' : DirichletCharacter ℂ N'), M ≠ 0 →\n      ψ.IsPrimitive → ψ'.IsPrimitive → (∀ n : ℕ, n.Coprime M → ψ (n : ZMod N) = ψ' (n : ZMod N')) →\n      (⟨N, ψ⟩ : Σ n : ℕ, DirichletCharacter ℂ n) = ⟨N', ψ'⟩ := by"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/BoxOfS.lean",
+      "bytes": 3495,
+      "sha256": "30589255a748770b92ecd7db144c914acdbc454d91b6aa243c749c1c7242c8ea",
+      "anchors": [
+        {
+          "name": "box_of_S",
+          "lines": [
+            28,
+            31
+          ],
+          "text": "theorem box_of_S :\n    ∃ C : ℝ, 0 < C ∧ ∀ ε τ K : ℝ, 0 < ε → ε ≤ 1 / 4 → 0 < τ → 1 ≤ K → ∃ Y₀ : ℝ, ∀ Y ≥ Y₀, ∀ (Q : ℝ) (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (q : ℕ) (κ : ℕ → ℂ),\n      Y ^ (ε / 6) ≤ Real.log Q → Real.log Q ≤ Y ^ (ε / 4) → GoodC Q χ → (∀ n : ℕ, χ (n : ZMod N) = κ n * J q n) →\n      (∀ y ∈ Set.Icc Y (Y ^ K), ‖S ((Y ^ K) ^ 400) y q κ‖ ≤ y ^ (1 / 2 + τ) / 2) → Box Q C τ Y (Y ^ K) χ := by"
+        },
+        {
+          "name": "box_of_S thresholds",
+          "lines": [
+            32,
+            36
+          ],
+          "text": "  obtain ⟨C, hC, hk⟩ := kappaC\n  refine ⟨C, hC, fun ε τ K hε hε4 hτ hK => ?_⟩\n  obtain ⟨Y₁, h1⟩ := hk ε hε (by linarith)\n  obtain ⟨Y₂, h2⟩ := tailK ε K hε (by linarith) hK\n  refine ⟨max (max Y₁ Y₂) 16, fun Y hY Q N _ χ q κ hlo hhi hg hχ hS => ?_⟩"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/GL3MeanSquares/ZeroFreeRegionGl2PrimeChoiceResults.lean",
+      "bytes": 6210,
+      "sha256": "0df4d42d5196ccf6ec33f625a11322ce65d30fe9316ba6f6f311b45bc7d44fed",
+      "anchors": [
+        {
+          "name": "zero_free_region_gl2_prime_choice_results",
+          "lines": [
+            10,
+            48
+          ],
+          "text": "theorem zero_free_region_gl2_prime_choice_results :\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.WGIdentity ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.WGLipschitz ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.WeightedSumLipschitzTrivial ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.CharacterSumLipschitzOfChebyshev ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.GFiniteSplit ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.MarkovDiscard ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.UnitModulusIncrementConditions ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.PrimorialBound ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ClassAdmissible ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ClassSplit ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.IncrementSizeConditions ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.TwEval ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.TwPrimitive ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.PrimePairOfBoxAndMeanSquareHypotheses ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.LogNE ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ExpSplit ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.SmoothingSizeBounds ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ThinIntegral ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.TailIntegralBoundOfPsiBound ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.CharacterSmoothingEstimate ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.NoExcOfBox ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.RealCharCount ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.NormOneCongr ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.NormOneCongrGeneral ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ExponentialRangeSizeConditions ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.PrimeEstimateOfIntervalHyp ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ExclusionInequalities ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ChoiceOfTwoPrimes ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ReciprocalWeightSizeConditions ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.SecondEstimateOfIntervalHypothesis ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.TstarSize ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.ChoiceOfExponentConstant ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.PrimeBoundOfUptoHyp ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.LogPrimeSizeBound ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.IsNormOneIff ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.TypeSign ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.TypeSignOfSplit ∧\n    Formalism.HermitianLattices.ZeroFreeRegionGL2.SplitsIffJacobi :="
+        },
+        {
+          "name": "GFiniteSplit proof name",
+          "lines": [
+            53,
+            53
+          ],
+          "text": "   Formalism.HermitianLattices.ZeroFreeRegionGL2.finite_splitting_of_group,"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/meanSqK.lean",
+      "bytes": 12003,
+      "sha256": "f7494b0eef8faebb957323f568505dc965332e0e239e9ef866acf502721a97aa",
+      "anchors": [
+        {
+          "name": "meanSqK",
+          "lines": [
+            51,
+            54
+          ],
+          "text": "theorem meanSqK :\n    ∃ C : ℝ, 0 < C ∧ ∀ ε K : ℝ, 0 < ε → ε ≤ 1 → 1 ≤ K → ∃ Y₀ : ℝ, ∀ Y ≥ Y₀, ∀ (U : ℝ) (m₀ a₀ : ℕ),\n      admitted ε Y U m₀ a₀ → (∀ p : ℕ, p.Prime → p ∣ m₀ → (p : ℝ) ≤ Y ^ (ε / 5) ∨ (Y ^ K) ^ 400 < (p : ℝ)) →\n      MeanSq C ((Y ^ K) ^ 400) (PPset m₀ a₀ U) (Set.Icc Y (Y ^ K)) := by"
+        },
+        {
+          "name": "meanSqK inputs and thresholds",
+          "lines": [
+            55,
+            63
+          ],
+          "text": "  obtain ⟨C1, hC1, hRR⟩ := RR_le\n  obtain ⟨C2, hC2, hsP⟩ := exists_primePowerSum_le_mul_log\n  obtain ⟨C3, hC3, hsPsq⟩ := sPsq_le\n  obtain ⟨C4, hC4, hcN⟩ := sum_cN_le\n  refine ⟨C3 + 25 * C1 ^ 2 + 4 * C2 ^ 2 + 20 * C1 * C2 + C4 ^ 2, by positivity, ?_⟩\n  intro ε K hε hε1 hK\n  obtain ⟨Y1, hY1⟩ := ev_log (ε / 6) (1600 * K) (by positivity) (by positivity)\n  obtain ⟨Y2, hY2⟩ := ev_log (1 / 2) (400 * K) (by norm_num) (by positivity)\n  obtain ⟨Y3, hY3⟩ := twistK ε (800 * K) (K + 1) hε (by positivity) (by positivity)"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/twistK.lean",
+      "bytes": 21259,
+      "sha256": "bf88793e05cdaac2af8d254b870970085afe1fbc0188a4bab6a04d99a488c4ac",
+      "anchors": [
+        {
+          "name": "twistK",
+          "lines": [
+            148,
+            151
+          ],
+          "text": "theorem twistK :\n    ∀ ε A B : ℝ, 0 < ε → 0 < A → 0 < B → ∃ Y₀ : ℝ, ∀ Y ≥ Y₀, ∀ (U : ℝ) (m₀ a₀ : ℕ), admitted ε Y U m₀ a₀ →\n      ∃ nstar : ℕ, ∀ s : ℕ, 1 < s → Odd s → Squarefree s → s.Coprime m₀ → (s : ℝ) ≤ Y ^ A → s ≠ nstar →\n        |∑ q ∈ PPset m₀ a₀ U, (jacobiSym (q : ℤ) s : ℝ)| ≤ Y ^ (-B) * ((PPset m₀ a₀ U).card : ℝ) := by"
+        },
+        {
+          "name": "twistK analytic inputs",
+          "lines": [
+            154,
+            159
+          ],
+          "text": "  have hP : PNTAPRelW := Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds\n  have hZ : Formalism.ZeroFreeDirichlet.ZFRDirichlet := Formalism.ZeroFreeDirichlet.zFRDirichlet\n  have hE : Formalism.ZeroFreeDirichlet.ExcBound := Formalism.ZeroFreeDirichlet.excBound\n  obtain ⟨x₁, hx₁⟩ := count_a hP hE ε hε\n  obtain ⟨c₀, hc₀, hpage⟩ := page_across hZ\n  obtain ⟨c₃, A₀, C₀, hc₃, H⟩ := hP"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/BadShare.lean",
+      "bytes": 16545,
+      "sha256": "99627325726fc52c2dd21e5058991f05d6d20f56267ff45d03d5774073f1c469",
+      "anchors": [
+        {
+          "name": "bs_sum_D_le",
+          "lines": [
+            146,
+            148
+          ],
+          "text": "private theorem bs_sum_D_le {C Z : ℝ} {P : Finset ℕ} {A : Set ℝ} (h : MeanSq C Z P A) {y : ℝ}\n    (hy : y ∈ A) (hy0 : 0 < y) {κ : ℕ → ℂ} (hκ : ∀ m, ‖κ m‖ ≤ 1) :\n    ∑ q ∈ P, ‖bsD Z y q κ‖ ^ 2 ≤ C * Real.log y * P.card / y := by"
+        },
+        {
+          "name": "bs_block",
+          "lines": [
+            163,
+            166
+          ],
+          "text": "private theorem bs_block {C Z Y W : ℝ} {P : Finset ℕ} (hC : 0 ≤ C) (hY : 1 ≤ Y) (hYW : Y ≤ W)\n    (hW2 : W ≤ 2 * Y) (h : MeanSq C Z P (Set.Icc Y W)) {κ : ℕ → ℂ} (hκ : ∀ m, ‖κ m‖ ≤ 1)\n    (w : ℕ → ℝ) (hw : ∀ q, w q ∈ Set.Icc Y W) :\n    ∑ q ∈ P, ‖S Z (w q) q κ‖ ^ 2 ≤ 4 * C * Y * Real.log (2 * Y) * P.card := by"
+        },
+        {
+          "name": "bs_markov",
+          "lines": [
+            207,
+            211
+          ],
+          "text": "private theorem bs_markov {C τ Z Y W : ℝ} {P B : Finset ℕ} (hC : 0 ≤ C) (hτ : 0 < τ) (hY : 2 ≤ Y)\n    (hYW : Y ≤ W) (hW2 : W ≤ 2 * Y) (h : MeanSq C Z P (Set.Icc Y W)) {κ : ℕ → ℂ}\n    (hκ : ∀ m, ‖κ m‖ ≤ 1) (hBP : B ⊆ P)\n    (hB : ∀ q ∈ B, ∃ y ∈ Set.Icc Y W, y ^ (1 / 2 + τ) / 2 < ‖S Z y q κ‖) :\n    (B.card : ℝ) ≤ 32 * C / τ * Y ^ (-τ) * P.card := by"
+        },
+        {
+          "name": "bad_share",
+          "lines": [
+            251,
+            254
+          ],
+          "text": "theorem bad_share :\n    ∀ C τ η : ℝ, 0 ≤ C → 0 < τ → 0 < η → ∃ Y₀ : ℝ, ∀ Y ≥ Y₀, ∀ (X Z : ℝ) (P B : Finset ℕ) (κ : ℕ → ℂ),\n      (∀ n, ‖κ n‖ ≤ 1) → MeanSq C Z P (Set.Icc Y X) → B ⊆ P →\n      (∀ q ∈ B, ∃ y ∈ Set.Icc Y X, y ^ (1 / 2 + τ) / 2 < ‖S Z y q κ‖) → (B.card : ℝ) ≤ η * P.card := by"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/CountBad.lean",
+      "bytes": 950,
+      "sha256": "67ff3c45775a16680553f4da3bb61fa59e631272d8835f3d310b3fbec200835c",
+      "anchors": [
+        {
+          "name": "count_bad",
+          "lines": [
+            9,
+            12
+          ],
+          "text": "theorem count_bad :\n    ∃ C : ℝ, ∀ (Q F : ℝ) (B : Finset ℕ), 3 ≤ Q →\n      (∀ q ∈ B, q.Prime ∧ F < q ∧ ∃ (f : ℕ) (_ : NeZero (f * q)) (ψ : DirichletCharacter ℂ (f * q)),\n        (f : ℝ) ≤ F ∧ ((f * q : ℕ) : ℝ) ≤ Q ∧ ψ.IsPrimitive ∧ ¬ ZeroFreeBox Q ψ) → (B.card : ℝ) ≤ C * Q ^ (1 / 4 : ℝ) := by"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/CountBadCore.lean",
+      "bytes": 3024,
+      "sha256": "6fd10096d015d9c2d6fbd8c3eb10a9f0d1cb3e4b6118b9d60c2040b570b1cde8",
+      "anchors": [
+        {
+          "name": "count_bad_core",
+          "lines": [
+            18,
+            22
+          ],
+          "text": "theorem count_bad_core :\n    ∃ C : ℝ, 0 ≤ C ∧ ∀ (Q F : ℝ) (S : Finset ℕ), 3 ≤ Q →\n      (∀ q ∈ S, q.Prime ∧ F < q ∧ ∃ (N f : ℕ) (_ : NeZero N) (ψ : DirichletCharacter ℂ N),\n        N = f * q ∧ (f : ℝ) ≤ F ∧ ψ.IsPrimitive ∧ (N : ℝ) ≤ Q ∧ ¬ ZeroFreeBox Q ψ) →\n      (S.card : ℝ) ≤ C * Q ^ (1 / 4 : ℝ) := by"
+        },
+        {
+          "name": "zero_density_box call",
+          "lines": [
+            24,
+            24
+          ],
+          "text": "  obtain ⟨C, hC⟩ := Formalism.HermitianLattices.Ext.PrimitiveCharacterCasts.ZD.zero_density_box"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/CountZAll.lean",
+      "bytes": 1203,
+      "sha256": "682e0fc4791a75d11dc4e35aed0a6008fc599db38825f50d2332ef11e1e8a5a3",
+      "anchors": [
+        {
+          "name": "zero_density_box",
+          "lines": [
+            13,
+            15
+          ],
+          "text": "theorem zero_density_box : Formalism.HermitianLattices.Ext.PrimitiveCharacterCasts.ZeroDensityBox :=\n  final_bound_of_assembly (coefficient_square_bound Formalism.FX.divisor_weight_bound) (zero_detection mollifier_identity)\n    (blockCountOf_statement duality_inequality (pair_twist_bound pair_sum_bound)) numeric_constants"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/MSqCount.lean",
+      "bytes": 21366,
+      "sha256": "32819b24d58802f1de325eee8e498bf68e7d2bf8ee7a9652e5611e89390659dd",
+      "anchors": [
+        {
+          "name": "mainAP_lower",
+          "lines": [
+            86,
+            93
+          ],
+          "text": "theorem mainAP_lower {M : ℕ} [NeZero M] (h8 : 8 ∣ M) (e : Option (DirichletCharacter ℂ M × ℝ))\n    (he : ∀ p : DirichletCharacter ℂ M × ℝ, e = some p → IsExcPair p.1 p.2)\n    (c : ℝ) (hc0 : 0 < c) (hc1 : c ≤ 1)\n    (hc : ∀ (χ : DirichletCharacter ℂ M) (β : ℝ), χ ^ 2 = 1 → χ ≠ 1 →\n      DirichletCharacter.LFunction χ (β : ℂ) = 0 → β ≤ 1 - c * (M : ℝ) ^ (-1 : ℝ))\n    (b : ℕ) (X : ℝ) (hX : 0 < X) (hY : 4 ≤ Real.log X) :\n    c * X / (2 * Real.log X * (M : ℝ) ^ 2) ≤ mainAP e b X := by\n  have hM8 : (8:ℝ) ≤ M := by exact_mod_cast Nat.le_of_dvd (Nat.pos_of_ne_zero (NeZero.ne M)) h8"
+        },
+        {
+          "name": "count_a",
+          "lines": [
+            346,
+            350
+          ],
+          "text": "theorem count_a (hP : PNTAPRelW) (hE : Formalism.ZeroFreeDirichlet.ExcBound) (ε : ℝ) (hε : 0 < ε) : ∃ x₀ : ℝ, ∀ (x X : ℝ) (m₀ a₀ : ℕ),\n    x₀ ≤ x → 0 < m₀ → 8 ∣ m₀ → a₀.Coprime m₀ →\n    (1 / 4) * Real.log x ^ 2 * Real.log m₀ ≤ Real.log X → x ^ (ε / 6) ≤ Real.log X →\n    Real.log X ≤ x ^ (ε / 5) * Real.log x ^ 2 →\n    X ^ (9 / 10 : ℝ) ≤ ((PPset m₀ a₀ X).card : ℝ) := by"
+        },
+        {
+          "name": "count_a witnesses",
+          "lines": [
+            351,
+            356
+          ],
+          "text": "  obtain ⟨c₃, A₀, C₀, hc₃, hPM⟩ := hP\n  obtain ⟨c0, hc0, hcb0⟩ := hE 1 one_pos\n  have hcpos : 0 < min c0 1 := lt_min hc0 one_pos\n  have hc1 : min c0 1 ≤ 1 := min_le_right _ _\n  refine ⟨Real.exp (320 + 4 * |C₀| * (5 + ε / 5) + |4 * Real.log (4 * (|A₀| + 1)) / c₃|\n    + |4 * Real.log (4 * (|A₀| + 1)) ^ 2 / c₃| + |Real.log (320 / min c0 1)|), ?_⟩"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/PNTFinal.lean",
+      "bytes": 1509,
+      "sha256": "9640f2f48b38cca23bbe8abd79095d1c684e680cad8b3683d96904387100554e",
+      "anchors": [
+        {
+          "name": "explicitS_proof",
+          "lines": [
+            16,
+            16
+          ],
+          "text": "theorem explicitS_proof' : ExplicitS := smoothed_explicit_formula"
+        },
+        {
+          "name": "logDensityM_proof",
+          "lines": [
+            18,
+            18
+          ],
+          "text": "theorem logDensityM_proof' : LogDensityM := Dens.log_density_bound"
+        },
+        {
+          "name": "deuringHeilbronnMB_proof",
+          "lines": [
+            20,
+            20
+          ],
+          "text": "theorem deuringHeilbronnMB_proof' : DeuringHeilbronnMB := deuring_heilbronn_lossy"
+        },
+        {
+          "name": "pnt_progressions_relative_weak_holds",
+          "lines": [
+            22,
+            24
+          ],
+          "text": "theorem pnt_progressions_relative_weak_holds : Formalism.HermitianLattices.Ext.LogarithmicIntegralBounds.PNTAPRelW :=\n  prime_count_of_psi (glue_ranges psi_relative_near_range\n    (psi_relative_far_range explicitS_proof' differenced_explicit_formula (zero_sum_bound_lossy logDensityM_proof' deuringHeilbronnMB_proof')))"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/MeanSquareHypWIff.lean",
+      "bytes": 2909,
+      "sha256": "7d765a6d89096ccdcb496ff4d15f4e33c31c9c6dadf718043ded31be8a3bc579",
+      "anchors": [
+        {
+          "name": "MeanSquareHypW",
+          "lines": [
+            13,
+            22
+          ],
+          "text": "def MeanSquareHypW (ε C x₀ : ℝ) : Prop :=\n  ∀ (x X : ℝ) (m₀ a₀ : ℕ) (κ : ℕ → ℂ), x₀ ≤ x → 8 ∣ m₀ →\n    (∀ p : ℕ, p.Prime → p ∣ m₀ → (p : ℝ) ≤ x ^ (ε / 5) ∨ x ^ 400 < (p : ℝ)) → a₀.Coprime m₀ → a₀ % 4 = 3 →\n    (1 / 4) * Real.log x ^ 2 * Real.log m₀ ≤ Real.log X → x ^ (ε / 6) ≤ Real.log X →\n    Real.log X ≤ x ^ (ε / 5) * Real.log x ^ 2 →\n    (∀ n, ‖κ n‖ ≤ 1) → (∀ a b, κ (a * b) = κ a * κ b) →\n    X ^ (9 / 10 : ℝ) ≤ ((PPset m₀ a₀ X).card : ℝ) ∧\n    (∑ q ∈ PPset m₀ a₀ X,\n        ‖∑ n ∈ Icc 1 ⌊x ^ 400⌋₊, ((cN x n : ℝ) : ℂ) * κ n * ((jacobiSym (n : ℤ) q : ℤ) : ℂ)‖ ^ 2) ≤\n      C * x * Real.log x * ((PPset m₀ a₀ X).card : ℝ)"
+        },
+        {
+          "name": "IsExcPair",
+          "lines": [
+            29,
+            31
+          ],
+          "text": "def IsExcPair {M : ℕ} [NeZero M] (χ₁ : DirichletCharacter ℂ M) (β₁ : ℝ) : Prop :=\n  χ₁ ^ 2 = 1 ∧ χ₁ ≠ 1 ∧ DirichletCharacter.LFunction χ₁ (β₁ : ℂ) = 0 ∧\n    1 - 1 / (8 * Real.log M) < β₁ ∧ β₁ < 1"
+        },
+        {
+          "name": "mainAP",
+          "lines": [
+            33,
+            36
+          ],
+          "text": "def mainAP {M : ℕ} (e : Option (DirichletCharacter ℂ M × ℝ)) (b : ℕ) (X : ℝ) : ℝ :=\n  match e with\n  | none => liX X / (M.totient : ℝ)\n  | some (χ₁, β₁) => (liX X - (χ₁ (b : ZMod M)).re * liX (X ^ β₁)) / (M.totient : ℝ)"
+        },
+        {
+          "name": "PNTAPRelW",
+          "lines": [
+            38,
+            46
+          ],
+          "text": "def PNTAPRelW : Prop :=\n  ∃ c₃ A₀ C₀ : ℝ, 0 < c₃ ∧ ∀ (M : ℕ) [NeZero M], 8 ∣ M →\n    ∃ e : Option (DirichletCharacter ℂ M × ℝ),\n      (∀ p : DirichletCharacter ℂ M × ℝ, e = some p → IsExcPair p.1 p.2) ∧\n      (e = none → ∀ (χ₁ : DirichletCharacter ℂ M) (β₁ : ℝ), ¬ IsExcPair χ₁ β₁) ∧\n      ∀ (X : ℝ) (b : ℕ), 2 ≤ X → C₀ * Real.log M * Real.log (Real.log M + 2) ≤ Real.log X → b.Coprime M →\n        |(piAP X M b : ℝ) - mainAP e b X| ≤\n          A₀ * (Real.exp (-(c₃ * Real.log X / Real.log M)) + Real.exp (-Real.sqrt (c₃ * Real.log X))) *\n            mainAP e b X"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/LandauZeroFreeBounds/SiegelWalfiszAPOfSiegelLower.lean",
+      "bytes": 1805,
+      "sha256": "faeccb13628f11e4327ec707baff22a530acacacce9b88d0d67e02ee19a5159a",
+      "anchors": [
+        {
+          "name": "excBound_of_siegelLower",
+          "lines": [
+            26,
+            27
+          ],
+          "text": "theorem excBound_of_siegelLower (hS : SiegelLower) : ExcBound :=\n  exceptional_zero_bound_of hS lfunction_deriv_near_one"
+        },
+        {
+          "name": "excBound",
+          "lines": [
+            32,
+            32
+          ],
+          "text": "theorem excBound : ExcBound := excBound_of_siegelLower siegelLower"
+        }
+      ]
+    }
+  ]
+}

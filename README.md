@@ -32,7 +32,11 @@ The independent Mathlib proof of the Euler-factor lemma used in `Claim.prim_zero
 
 ## Task 04 arithmetic handoff
 
-The pinned source trace identifies the seven inputs to the handoff, the two theta projections and the cohomological window in `VWin`. The standalone Lean extraction checks the exact logarithm bound used in a divisibility step and its failure at exponent zero. The GRH claim remains unverified in this repository. The next experiment targets a fixed-modulus instance of the exceptional-prime bound used to choose theta host fields. [Arithmetic audit](docs/arithmetic-handoff-audit.md) · [Run report](docs/codex-task-04-result.md) · [Ranked experiments](docs/next-research-experiments.md)
+The pinned source trace identifies the seven inputs to the handoff, the two theta projections and the cohomological window in `VWin`. The standalone Lean extraction checks the exact logarithm bound used in a divisibility step and its failure at exponent zero. The GRH claim remains unverified in this repository. [Arithmetic audit](docs/arithmetic-handoff-audit.md) · [Run report](docs/codex-task-04-result.md)
+
+## Task 05 exceptional-prime audit
+
+The audit pins the order of constants and thresholds in `QH.stage1` and follows the mean square, box count, and prime-count inputs for modulus 24. Exact finite computations check all eight characters, their twists at 11 and 19, and both candidate windows. A standalone Lean 4.33.1 build checks the source-used primitive reduction `stage1_prim`. Independent proof of the eventual exceptional-prime estimate remains open in this repository. [Audit](docs/stage1-exceptional-primes-audit.md) · [Run report](docs/codex-task-05-result.md) · [Ranked experiments](docs/next-research-experiments.md)
 
 ## First milestones
 
@@ -66,7 +70,7 @@ python tools/validate_claims.py
 python -m unittest discover -s tests -v
 ```
 
-The Python tests validate research metadata and the arithmetic source registry offline. With network access, run `python tools/check_entrypoint_sources.py` for the entrypoint and Task 03 extraction checks, and `python tools/check_arithmetic_handoff.py` for the arithmetic pins, source anchors and Task 04 extraction signature. [Task 04 commands and limits](docs/codex-task-04-result.md)
+The Python tests validate research metadata, source registry checks, and finite diagnostics offline. Run `python tools/mod24_prime_diagnostics.py` for the character and prime tables. With network access, run `python tools/check_entrypoint_sources.py`, `python tools/check_arithmetic_handoff.py`, or `python tools/check_stage1_sources.py` to check the pinned source sets and extraction signatures. The Task 05 checker also supports `--offline` after the initial fetch. [Task 04 commands and limits](docs/codex-task-04-result.md) · [Task 05 commands and limits](docs/codex-task-05-result.md)
 
 ## Layout
 

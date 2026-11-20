@@ -167,6 +167,33 @@
       "proof_obligation": "Identify exact use of this elementary logarithmic estimate in source consumers and independently test whether all later constants are uniform under the required family and lift parameters.",
       "verification_note": "Source declaration signature matched; independently rerun pinned Lean 4.33.1 project successfully (3579 jobs). Both declarations depend only on propext, Classical.choice and Quot.sound. This bound is standard, not the GRH bottleneck.",
       "as_of": "2026-11-21"
+    },
+    {
+      "id": "A-008",
+      "track": "alpoge",
+      "statement": "QH.stage1 in the pinned submission claims a universal positive constant for eventual exceptional-prime bounds. At N₀=24, ε=1/100, τ=1/200, K=2 and η=1/4, every bad subset of the nonempty candidate set has size at most one quarter of that set.",
+      "status": "source_inspected",
+      "kind": "theorem",
+      "source_urls": [
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/Stage1Succ.lean#L36-L96",
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/StagePow.lean#L41-L170"
+      ],
+      "proof_obligation": "Independently prove the uniform mean square, zero-density count, logarithmic derivative and tail estimates, and prime supply used by the selection at level 24.",
+      "verification_note": "Task 05 verified hashes and declaration anchors for 18 source files, checked the specialization and traced the named analytic inputs. Its finite diagnostics checked character conductors and candidate windows. The eventual analytic estimate and transitive upstream axiom set remain unaudited by a local build.",
+      "as_of": "2026-11-21"
+    },
+    {
+      "id": "A-009",
+      "track": "alpoge",
+      "statement": "The source-used lemma stage1_prim gives a primitive character of positive level at most N₀ that agrees with a given level-N₀ character on all inputs coprime to N₀.",
+      "status": "reproduced",
+      "kind": "theorem",
+      "source_urls": [
+        "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Development/AutomorphicArithmetic/MeanSquareBounds/Stage1Succ.lean#L14-L25"
+      ],
+      "proof_obligation": "Use the exact level-reduction statement only as the character-theoretic input to stage1. The analytic exceptional-prime estimate needs separate verification.",
+      "verification_note": "The exact type matched the pinned source. Extraction.Stage1Primitive independently built in the standalone Lean 4.33.1 project with pinned Mathlib, and the axiom audit listed propext, Classical.choice and Quot.sound.",
+      "as_of": "2026-11-21"
     }
   ]
 }

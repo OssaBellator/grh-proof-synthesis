@@ -1,3 +1,4 @@
 import Extraction.FactorChecks
 import Extraction.LogSquare
 import Extraction.Semantics
+import Extraction.Stage1Primitive
