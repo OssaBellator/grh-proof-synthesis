@@ -20,7 +20,7 @@ Create one graph per proposal. Each node must list:
 - evidence status: proposed / reproduced / audited / invalid;
 - downstream dependents and possible simplifications.
 
-For Alpöge–Claude, prioritize formal statement audit, axioms/dependencies, theta-lift iteration, and the claimed bridge to the needed arithmetic estimates.
+For Alpöge–Claude, start from the five identified formal targets. Sutherland reports a full source build, module replay, a three-axiom result and nanoda acceptance. Deicyde’s CI established source identity and exported a separate challenge. Prioritize the semantic audit of the pole and strip guards, followed by extraction of one Euler-factor lemma with a known consumer. Trace the remaining arithmetic dependencies and seek a quantified lift cost separately. [Independent reports](verification-landscape-2026-11-21.md) · [named dependencies](entrypoint-lean-dependency-map.md) · [experiment acceptance criteria](next-research-experiments.md)
 
 For Masullo, prioritize space definitions, completeness/density hypotheses, orbital bases, operator domains, trace-class/nuclearity assertions, limit interchanges, and the claimed implication for zero locations.
 

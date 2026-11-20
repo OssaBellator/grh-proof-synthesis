@@ -38,3 +38,9 @@ The checksums below were independently recomputed in the local Code workspace on
 | Masullo draft | 6,756,996 bytes | 940 | `e039d3f6cf0a4b14f03c7edb85097752dd65c0a2fe543c76fe992be234f97bf5` |
 
 See [machine-readable source lock](../data/sources.lock.json). This verifies downloaded artifact identity **only**, not mathematical correctness.
+
+## Second pass, 20 November UTC / 21 November Brisbane
+
+The initial-status table above records the first pass. The two original PDFs still returned the locked SHA-256 values. Sutherland subsequently documented a source build, module replay, axiom lists and nanoda acceptance. Deicyde published successful archive and challenge CI jobs. The landscape records their different cutoffs, the hashes we recomputed on small files, and which large hashes come solely from the operators. [Dated landscape](verification-landscape-2026-11-21.md) · [public run records and source revisions](../data/reproductions.json)
+
+Exact raw URLs, byte counts and SHA-256 values for Main, Statements, the immediate wrappers and official Mathlib definitions are in the [entry-point source inventory](entrypoint-lean-dependency-map.md#artifact-identity-and-external-checks). The paper’s August v2 and the November submission have separate provenance. [Alpöge–Furman revision history](https://arxiv.org/abs/2608.13637v2)

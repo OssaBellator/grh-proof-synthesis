@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "date_basis": "date_checked is UTC. source_date identifies the publication, revision, or dated state reported by the source.",
+  "trust_levels": {
+    "public_run_record": "A primary public run report, CI result or log was inspected. The verdict belongs to its operator and only to the target described.",
+    "primary_text": "Primary text or source metadata was inspected. Its mathematical or computational assertions retain the author's evidence level."
+  },
+  "reproductions": [
+    {
+      "id": "alpoge-note",
+      "source_url": "https://alpo.ge/remark.pdf",
+      "author": "Levent Alpöge",
+      "source_date": "2026-11-20",
+      "date_checked": "2026-11-20",
+      "kind": "source_manuscript",
+      "verified_evidence": "Author note pp. 1 and 4 announces RH and Dirichlet GRH and describes theta-lift iteration. Fetched PDF matches the existing source lock.",
+      "limitations": "The chronology provides no quantitative proof of the lift estimate.",
+      "potential_use": "Identify the exact cost lemma in Lean.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "sutherland",
+      "source_url": "https://math.mit.edu/~drew/grh/",
+      "author": "Andrew Sutherland (MIT)",
+      "source_date": "2026-11-20 19:45 UTC update",
+      "date_checked": "2026-11-20",
+      "kind": "independent_check",
+      "verified_evidence": "Report gives 175,187/175,187 source modules built and replayed. audit.log lists only propext, Classical.choice and Quot.sound for each of five named targets. nanoda.log records exit 0 on the full solution export as identified by the report.",
+      "limitations": "Unsandboxed direct Lean build. Default and paranoid export checks and full Comparator still running at the report timestamp. This pass inspected the report and two small logs.",
+      "potential_use": "Baseline for a sandboxed export comparison and a separate semantic audit.",
+      "trust_level": "public_run_record",
+      "receipts": [
+        "https://math.mit.edu/~drew/grh/audit.log",
+        "https://math.mit.edu/~drew/grh/nanoda.log",
+        "https://math.mit.edu/~drew/grh/SHA256SUMS"
+      ]
+    },
+    {
+      "id": "deicyde",
+      "source_url": "https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/verification/NOTES.md",
+      "author": "Deicyde",
+      "source_date": "2026-11-20 20:43 UTC revision, CI completed 20:47 UTC",
+      "date_checked": "2026-11-20",
+      "kind": "independent_check",
+      "verified_evidence": "GitHub run 44813916558 reports success for archive identity and the Mathlib-only challenge build/export. The pinned Results section still reports the solution build in progress.",
+      "limitations": "CI omits the full solution. The smoke-test verdict refers to four other theorems. MIT's use of the same challenge limits independence of target selection.",
+      "potential_use": "Compare independently produced challenge and solution digests separately.",
+      "trust_level": "public_run_record",
+      "receipts": [
+        "https://github.com/Deicyde/riemann-hypothesis/actions/runs/44813916558",
+        "https://api.github.com/repos/Deicyde/riemann-hypothesis/actions/runs/44813916558/jobs",
+        "https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/.github/workflows/checks.yml",
+        "https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/src/Challenge.lean"
+      ]
+    },
+    {
+      "id": "amahane-module",
+      "source_url": "https://gist.github.com/Amahane-Hikari/7c9ba7ca98b06a0ccb4a9e41081a3cba/e1122ea07649024c7d3e3026ec94d37c54a8dc8f",
+      "author": "Amahane-Hikari",
+      "source_date": "2026-11-20 18:38 UTC",
+      "date_checked": "2026-11-20",
+      "kind": "independent_check",
+      "verified_evidence": "M109806 receipt and matching target name in the build log document exit 0 for the module ending in ExplicitConstants.UniformIffAboveThreshold.",
+      "limitations": "One Lake target. The 8706 jobs include dependencies. Binaries and input manifest were not checked here.",
+      "potential_use": "Template for a receipt for a single extracted lemma.",
+      "trust_level": "public_run_record"
+    },
+    {
+      "id": "cocosgt",
+      "source_url": "https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/README.md",
+      "author": "CocoSgt",
+      "source_date": "2026-11-20 15:13 UTC README",
+      "date_checked": "2026-11-20",
+      "kind": "mirror",
+      "verified_evidence": "README describes an unmodified archive import. Main and Statements at import commit 0fb9869c6e6d7b54b67de803af0e0be29d37fc22 matched the corresponding Deicyde files by SHA-256.",
+      "limitations": "Our byte comparison covers two files. The mirror offers no independent replay receipt.",
+      "potential_use": "Pin the exact declarations for statement and dependency inspection.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "sinf-ken",
+      "source_url": "https://github.com/SINF-KEN/rh-lean-check/blob/e7c8972c701d3396947808ab20cc16dc14623d33/README.md",
+      "author": "SINF-KEN",
+      "source_date": "2026-11-20 15:04 UTC revision",
+      "date_checked": "2026-11-20",
+      "kind": "mirror",
+      "verified_evidence": "GitHub identifies Deicyde/riemann-hypothesis as parent. Fork README displays the upstream CI badge and a running Comparator status.",
+      "limitations": "Inherited upstream status supplies no separate operator verdict.",
+      "potential_use": "Avoid double-counting an earlier fork snapshot.",
+      "trust_level": "primary_text",
+      "receipts": [
+        "https://api.github.com/repos/SINF-KEN/rh-lean-check"
+      ]
+    },
+    {
+      "id": "tomodovodoo",
+      "source_url": "https://github.com/Tomodovodoo/Riemann/blob/3c2640f015af442db8e3c971161f893e4266f580/README.md",
+      "author": "Tomodovodoo",
+      "source_date": "2026-11-20 15:48 UTC revision",
+      "date_checked": "2026-11-20",
+      "kind": "mirror",
+      "verified_evidence": "README describes a mirror and explicitly says it contains no build or kernel-check results.",
+      "limitations": "GitHub's non-fork flag is repository genealogy, not independent verification.",
+      "potential_use": "Locate the source entry point and credit the original author.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "tomasortega",
+      "source_url": "https://github.com/TomasOrtega/RH/blob/a6ac91a412dcbaab31801355ec5707024a71bf65/README.md",
+      "author": "TomasOrtega",
+      "source_date": "2026-11-20 14:18 UTC revision",
+      "date_checked": "2026-11-20",
+      "kind": "mirror",
+      "verified_evidence": "README identifies extracted/lean/ as the project extracted from the announcement archive.",
+      "limitations": "No independent check log identified in the inspected README.",
+      "potential_use": "Locate an alternate source path.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "chow",
+      "source_url": "https://mathoverflow.net/questions/518033/how-to-human-verify-enormous-ai-math-output/518036",
+      "author": "Timothy Chow (community-wiki answer)",
+      "source_date": "2026-11-20 21:23 UTC edit",
+      "date_checked": "2026-11-20",
+      "kind": "commentary",
+      "verified_evidence": "Answer 518036 attributes an outline to Fable via Chris Birkbeck, proposes identifying unfamiliar ingredients, and links O’Desky’s catalogue.",
+      "limitations": "Interpretation and research leads. The outline has no local declaration-level verification here.",
+      "potential_use": "Guide a bounded search for one novel step.",
+      "trust_level": "primary_text",
+      "receipts": [
+        "https://api.stackexchange.com/2.3/answers/518036?site=mathoverflow&filter=withbody"
+      ]
+    },
+    {
+      "id": "odesky",
+      "source_url": "https://andrewodesky.com/rh/",
+      "author": "Andrew O’Desky",
+      "source_date": "2026-11-20 retrieval, compilation as of 15:20 EST",
+      "date_checked": "2026-11-20",
+      "kind": "commentary",
+      "verified_evidence": "Catalogue displayed 60 restatements, 17 tagged checked against Lean, and a partial compile. HTML SHA-256 e00630f61bd16c7608dad60eef4863458c1a21f68cceedb30a807f1dafab83ad.",
+      "limitations": "Catalogue labels are the investigator’s. A checked restatement is narrower than a checked mathematical proof.",
+      "potential_use": "Look up a specific theta-scalar or prime-sum declaration for later reading.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "alpoge-furman",
+      "source_url": "https://arxiv.org/html/2608.13637v2",
+      "author": "Levent Alpöge and Ralph Furman",
+      "source_date": "2026-08-13 v1, 2026-08-19 v2",
+      "date_checked": "2026-11-20",
+      "kind": "historical_method",
+      "verified_evidence": "Theorems A/B in v2 state partial asymptotic proportions for zeta and each fixed primitive character. Lemmas 3.1/3.2 give inertia under pullback and a finite Hermitian rank–trace inequality.",
+      "limitations": "August result. No independent replay of its Lean code or audit of its analytic estimates in this pass.",
+      "potential_use": "Test a finite compression with indefinite off-line pair blocks.",
+      "trust_level": "primary_text",
+      "receipts": [
+        "https://arxiv.org/abs/2608.13637v2"
+      ]
+    },
+    {
+      "id": "masullo",
+      "source_url": "https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf",
+      "author": "Alessandro Maria Masullo",
+      "source_date": "2026-11-20 posted draft",
+      "date_checked": "2026-11-20",
+      "kind": "source_manuscript",
+      "verified_evidence": "PDF SHA-256 matches the repository source lock. Physical pp. 35, 519–520 and 522 inspected. Theorem 13.3.1.2 has a title and an insertion footnote without a statement.",
+      "limitations": "Selected pages only. Theorem 12.5.1.1 and the proposed terminal deduction were not verified.",
+      "potential_use": "Audit the cutoff and strip parameters and the test-function restriction.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "vakil",
+      "source_url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+      "author": "Ravi Vakil",
+      "source_date": "2026-11-20",
+      "date_checked": "2026-11-20",
+      "kind": "commentary",
+      "verified_evidence": "Vakil reports months of review and extensive feedback from Brian Conrad and requests public checking of the draft.",
+      "limitations": "The post is primary evidence of Vakil’s announcement. It supplies no public completed report from Conrad.",
+      "potential_use": "Track dated manuscript revisions and public critiques.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "nomen",
+      "source_url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/comment-page-1/#comment-699604",
+      "author": "Nomen, comment on Terence Tao’s blog",
+      "source_date": "2026-11-20 11:42 am as displayed",
+      "date_checked": "2026-11-20",
+      "kind": "commentary",
+      "verified_evidence": "Comment 699604 identifies editorial placeholders and labels a linked AI audit preliminary. Physical p. 522 independently confirms a missing terminal statement.",
+      "limitations": "The AI discussion was not used as evidence. Incompleteness of a draft does not settle the underlying argument.",
+      "potential_use": "Recheck specific manuscript defects against a new version.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "goldblatt",
+      "source_url": "https://github.com/davegoldblatt/openai-zeta-proof-check/blob/3f11b2203b76902f1b6b234115437302a94b79c3/REPORT.md",
+      "author": "Dave Goldblatt",
+      "source_date": "2026-10-06 to 2026-10-07 UTC",
+      "date_checked": "2026-11-20",
+      "kind": "historical_method",
+      "verified_evidence": "Run B log names the seven-eighths zeta theorem and records nanoda and Lean default kernel acceptance for a separately written challenge.",
+      "limitations": "Methodology for another proof. The report identifies one operator and trust in the upstream configuration and patched dependencies.",
+      "potential_use": "Specify an independent challenge and include a per-kernel log.",
+      "trust_level": "public_run_record",
+      "receipts": [
+        "https://github.com/davegoldblatt/openai-zeta-proof-check/blob/3f11b2203b76902f1b6b234115437302a94b79c3/evidence/comparator.run3-nanoda.log",
+        "https://github.com/leanprover/comparator/blob/v4.33.0/README.md"
+      ]
+    },
+    {
+      "id": "vstaln",
+      "source_url": "https://github.com/vstaln/riemann/blob/1d96c3903e8bc0e3fd114077073debba1267c862/README.md",
+      "author": "vstaln/riemann",
+      "source_date": "2026-08-24 retirement, 2026-08-26 revision",
+      "date_checked": "2026-11-20",
+      "kind": "alternate_program",
+      "verified_evidence": "README retires a claimed August improvement after the verifier used a different functional from the theorem and describes exact mass constraints in its revised work.",
+      "limitations": "Reported by the project. Neither the retirement analysis nor its replacement numerical floor was independently rerun here.",
+      "potential_use": "Test theorem-to-certificate identity and coefficient constraints.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "drmurphy",
+      "source_url": "https://github.com/DrMurphyIsIn/riemann-hypothesis-lean/blob/8c45caa4e8240c022a6f2acc0f70373f9667a0af/README.md",
+      "author": "DrMurphyIsIn",
+      "source_date": "2026-11-08 revision",
+      "date_checked": "2026-11-20",
+      "kind": "alternate_program",
+      "verified_evidence": "README describes de Bruijn–Newman bounds, finite-window positivity and a conditional Riemann–Roch-square construction. It explicitly leaves RH open.",
+      "limitations": "Authors’ classification and reported checks. No build or independent receipt for those claims inspected here.",
+      "potential_use": "Preserve exact residual construction requirements in a conditional criterion.",
+      "trust_level": "primary_text"
+    },
+    {
+      "id": "lamzouri-simplification",
+      "source_url": "https://arxiv.org/abs/2609.02882",
+      "author": "Youness Lamzouri",
+      "source_date": "2026-09-02 v1, 2026-09-08 revision",
+      "date_checked": "2026-11-20",
+      "kind": "historical_method",
+      "verified_evidence": "Lamzouri presents a shorter independent proof of the August Alpöge–Furman lower bound (>67.25% simple critical-line zeros), replacing its finite-dimensional Hermitian matrix method by a Hilbert-space inequality and unconditional pair correlation.",
+      "limitations": "A different proof of the August partial proportion theorem, not a verification or simplification of the November full GRH claim. This project's mathematical audit of Lamzouri's complete paper remains pending.",
+      "potential_use": "Compare the August finite-matrix argument and its Hilbert-space simplification; test whether an actual November sublemma admits an analogous reduction without transferring unproved hypotheses.",
+      "trust_level": "primary_text",
+      "receipts": [
+        "https://www.mpim-bonn.mpg.de/de/node/15886"
+      ]
+    },
+    {
+      "id": "wang-short-intervals",
+      "source_url": "https://arxiv.org/abs/2609.07918",
+      "author": "Biao Wang",
+      "source_date": "2026-09-07 v1, October 2026 revision",
+      "date_checked": "2026-11-20",
+      "kind": "historical_method",
+      "verified_evidence": "The author extends the Lamzouri-style conjugation-invariant finite-multiset inequality and unconditional pair-correlation estimates to proportion bounds for simple critical zeros in short intervals.",
+      "limitations": "Independent research on the earlier August 2026 partial result; it does not prove GRH and is not an independent check of the November Lean archive. Full paper and numerical constants not audited by this project.",
+      "potential_use": "Test stability and localization of simplification inequalities under restricted height windows; watch where uniform error terms enter.",
+      "trust_level": "primary_text",
+      "receipts": [
+        "https://arxiv.org/abs/2609.07918"
+      ]
+    }
+  ]
+}

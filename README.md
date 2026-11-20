@@ -20,6 +20,12 @@ We prioritize **reconstructing both arguments independently before combining the
 
 The [task report](docs/codex-task-01-result.md) documents Codex CLI's source-inspection run and tests. Its [Alpöge dependency map](docs/dependency-map-alpoge.md) is a *narrative audit map*, not an extracted Lean proof graph. The [Masullo dependency map](docs/dependency-map-masullo.md) records the trace-formula prerequisites and a visible gap in the manuscript's written terminal theorem on p. 522. The [first-lemma triage](docs/first-lemma-triage.md) prioritizes the incompatibility between Masullo's restricted test functions and autocorrelation positivity. A tiny [Lean toy check](lean/ToyLemma.lean) passed, but no part of RH or GRH was proved.
 
+## Independent verification snapshot (21 November 2026, Brisbane)
+
+Andrew Sutherland reports a successful build and Lean kernel replay of all 175,187 submitted modules, the three standard axioms for each headline theorem, and nanoda acceptance of the full export. At his 19:45 UTC update on 20 November, end-to-end Comparator was still running. Deicyde’s passing CI checked archive identity and a Mathlib-only challenge export. Masullo’s posted draft still lacks the statement of Theorem 13.3.1.2 on p. 522. [MIT report and logs](https://math.mit.edu/~drew/grh/) · [Deicyde CI](https://github.com/Deicyde/riemann-hypothesis/actions/runs/44813916558) · [Masullo, p. 522](https://math216.wordpress.com/wp-content/uploads/2026/11/the-music-of-the-primes.pdf#page=522)
+
+The [verification landscape](docs/verification-landscape-2026-11-21.md) and [evidence registry](data/reproductions.json) identify each investigator’s target and result. The [Lean entry-point map](docs/entrypoint-lean-dependency-map.md) follows the five declarations to a shared nonvanishing assertion. The [ranked experiments](docs/next-research-experiments.md) start with the Dirichlet pole convention and a small Euler-factor lemma.
+
 ## First milestones
 
 - **M0 — Source control:** identify originals, versions, licenses, formal theorem statements, build environments, and dependencies; preserve links and hashes.

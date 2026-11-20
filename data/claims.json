@@ -11,10 +11,11 @@
       "status": "announced",
       "kind": "announcement",
       "source_urls": [
-        "https://alpo.ge/remark.pdf"
+        "https://alpo.ge/remark.pdf",
+        "https://raw.githubusercontent.com/CocoSgt/riemann-hypothesis-lean/0fb9869c6e6d7b54b67de803af0e0be29d37fc22/src/Main.lean"
       ],
       "proof_obligation": "Identify the exact final Lean theorem and check that it is equivalent to standard Dirichlet GRH.",
-      "verification_note": "Author note p. 1 inspected; claim remains unverified and exact Lean theorem is unknown.",
+      "verification_note": "First pass inspected the author note p. 1. Task 02 identified all five Main declarations and their types in a pinned mirror. The semantic correspondence to classical Dirichlet GRH remains under investigation.",
       "as_of": "2026-11-21"
     },
     {
@@ -24,10 +25,12 @@
       "status": "announced",
       "kind": "formal_artifact_claim",
       "source_urls": [
-        "https://alpo.ge/remark.pdf"
+        "https://alpo.ge/remark.pdf",
+        "https://math.mit.edu/~drew/grh/",
+        "https://github.com/Deicyde/riemann-hypothesis/actions/runs/44813916558"
       ],
       "proof_obligation": "Acquire and hash the exact archive, pin its toolchain, reproduce the build, audit axioms, and compare the terminal theorem to Dirichlet GRH.",
-      "verification_note": "Note p. 1 footnote links fourteen parts; archive not downloaded or built.",
+      "verification_note": "Note p. 1 footnote links fourteen parts. No local archive build. See data/reproductions.json for Sutherland’s independent build, module replay and nanoda verdict, and for Deicyde’s source and challenge CI results.",
       "as_of": "2026-11-21"
     },
     {
